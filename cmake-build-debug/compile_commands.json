@@ -1,0 +1,22 @@
+[
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Launcher.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Launcher.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Launcher.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Game.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Game.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Game.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\TitleScreen.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\TitleScreen.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/TitleScreen.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Assets.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Assets.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Assets.cpp"
+}
+]

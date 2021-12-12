@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/C++ Projects/MuseumGame/Assets.h
+iostream
+-
+
+E:/C++ Projects/MuseumGame/Game.cpp
+Game.h
+E:/C++ Projects/MuseumGame/Game.h
+
+E:/C++ Projects/MuseumGame/Game.h
+raylib.h
+-
+Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
+
