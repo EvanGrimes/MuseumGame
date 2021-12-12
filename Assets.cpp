@@ -6,4 +6,10 @@
 
 namespace Assets{
     std::string gameState;
+
+    Texture2D titleBG;
+
+    void LoadTitle(){
+        titleBG = LoadTexture("../res/textures/BGPlace.png");
+    }
 }

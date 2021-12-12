@@ -24,11 +24,11 @@ void TitleScreen::render() {
 
     ClearBackground(RAYWHITE);
 
-    DrawTexture(Assets::titleScreen, 0, 0, WHITE);
+    DrawTexture(Assets::titleBG, 0, 0, WHITE);
 
     DrawFPS(10, 10);
 
-    if (startBtnState == 0) {
+    /*if (startBtnState == 0) {
         DrawTexture(Assets::startBtn, (int)startBtnBounds.x, (int)startBtnBounds.y, WHITE);
     }
 
@@ -47,7 +47,7 @@ void TitleScreen::render() {
 
     DrawTexture(Assets::controlsBtn, 950, 550, WHITE);
 
-    DrawTexture(Assets::exitBtn, -5, 550, WHITE);
+    DrawTexture(Assets::exitBtn, -5, 550, WHITE);*/
 
 }
 
@@ -69,7 +69,7 @@ void TitleScreen::tickStartBtn() {
 
         std::cout << "Start button clicked\n" << std::endl;
 
-        StopMusicStream(Assets::titleSong);
+       // StopMusicStream(Assets::titleSong);
 
         Assets::gameState = "game";
     }
@@ -123,7 +123,7 @@ void TitleScreen::tickExitBtn() {
 
         std::cout << "Exit Button Clicked\n" << std::endl;
 
-        Assets::unloadTitle();
+        //Assets::unloadTitle();
 
         Assets::gameState = "exit";
     }

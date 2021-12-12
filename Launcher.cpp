@@ -9,6 +9,7 @@ int main(){
     SetTargetFPS(60);
     InitWindow(1000, 600, "test");
     Assets::gameState = "title";
+    Assets::LoadTitle();
     while(!WindowShouldClose()){
         gameObj.loop();
     }

@@ -7,11 +7,14 @@ CMakeFiles/MuseumGame.dir/Assets.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Game.cpp
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Game.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../TitleScreen.h
 
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Game.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Launcher.cpp
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../TitleScreen.h
 
+CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj: ../TitleScreen.cpp
 CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj: ../TitleScreen.h
 

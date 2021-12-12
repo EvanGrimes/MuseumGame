@@ -5,6 +5,7 @@
 #include "Game.h"
 
 void Game::loop() {
+    BeginDrawing();
     if(Assets::gameState == "title"){
         /*if(IsKeyPressed(KEY_P)){
             std::cout << "mouse go brrrrrr";
@@ -13,8 +14,8 @@ void Game::loop() {
         BeginDrawing();
         ClearBackground(BLUE);
         EndDrawing();*/
-        titleScreen.tick();
 
+        titleScreen.tick();
     }
     if(Assets::gameState == "game"){
         if(IsKeyPressed(KEY_P)){
@@ -25,5 +26,7 @@ void Game::loop() {
         ClearBackground(YELLOW);
         EndDrawing();
     }
+
+    EndDrawing();
 
 }

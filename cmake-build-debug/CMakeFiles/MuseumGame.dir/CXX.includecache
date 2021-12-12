@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 E:/C++ Projects/MuseumGame/Assets.h
+raylib.h
+-
 iostream
 -
 
@@ -15,6 +17,14 @@ Game.h
 E:/C++ Projects/MuseumGame/Game.h
 
 E:/C++ Projects/MuseumGame/Game.h
+raylib.h
+-
+Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
+TitleScreen.h
+E:/C++ Projects/MuseumGame/TitleScreen.h
+
+E:/C++ Projects/MuseumGame/TitleScreen.h
 raylib.h
 -
 Assets.h
