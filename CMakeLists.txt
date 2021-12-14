@@ -13,6 +13,6 @@ project(MuseumGame)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(MuseumGame Launcher.cpp Game.cpp Game.h TitleScreen.cpp TitleScreen.h Assets.cpp Assets.h)
+add_executable(MuseumGame Launcher.cpp Game.cpp Game.h TitleScreen.cpp TitleScreen.h Assets.cpp Assets.h GameState.cpp GameState.h)
 
 target_link_libraries(MuseumGame PRIVATE raylib winmm)

@@ -9,7 +9,7 @@ class TitleScreen {
 public:
 
     // The button collision boxes
-    Rectangle startBtnBounds = {355,200,255, 112 };
+    Rectangle startBtnBounds = {370,300,257, 97 };
     Rectangle settBtnBounds = { 355,330,255, 112 };
     Rectangle exitBtnBounds = { 0,550,50, 50 };
     Rectangle controlBtnBounds = { 950,550,50, 50 };
@@ -24,11 +24,8 @@ public:
     bool exitBtnAction = false;
     bool controlBtnAction = false;
 
-    //Mouse position
     Vector2 mousePoint = { 0.0f, 0.0f };
 
-
-    //All the functions used
     void tick();
     void render();
     void tickStartBtn();

@@ -196,6 +196,33 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+GameState.obj: GameState.cpp.obj
+
+.PHONY : GameState.obj
+
+# target to build an object file
+GameState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/GameState.cpp.obj
+.PHONY : GameState.cpp.obj
+
+GameState.i: GameState.cpp.i
+
+.PHONY : GameState.i
+
+# target to preprocess a source file
+GameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/GameState.cpp.i
+.PHONY : GameState.cpp.i
+
+GameState.s: GameState.cpp.s
+
+.PHONY : GameState.s
+
+# target to generate assembly for a file
+GameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/GameState.cpp.s
+.PHONY : GameState.cpp.s
+
 Launcher.obj: Launcher.cpp.obj
 
 .PHONY : Launcher.obj
@@ -265,6 +292,9 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... GameState.obj
+	@echo ... GameState.i
+	@echo ... GameState.s
 	@echo ... Launcher.obj
 	@echo ... Launcher.i
 	@echo ... Launcher.s

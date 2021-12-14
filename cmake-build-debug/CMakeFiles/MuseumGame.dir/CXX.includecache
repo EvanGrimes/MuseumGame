@@ -24,6 +24,18 @@ E:/C++ Projects/MuseumGame/Assets.h
 TitleScreen.h
 E:/C++ Projects/MuseumGame/TitleScreen.h
 
+E:/C++ Projects/MuseumGame/Launcher.cpp
+raylib.h
+-
+Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
+Game.h
+E:/C++ Projects/MuseumGame/Game.h
+
+E:/C++ Projects/MuseumGame/TitleScreen.cpp
+TitleScreen.h
+E:/C++ Projects/MuseumGame/TitleScreen.h
+
 E:/C++ Projects/MuseumGame/TitleScreen.h
 raylib.h
 -

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MuseumGame.dir/Assets.cpp.obj"
   "CMakeFiles/MuseumGame.dir/Game.cpp.obj"
+  "CMakeFiles/MuseumGame.dir/GameState.cpp.obj"
   "CMakeFiles/MuseumGame.dir/Launcher.cpp.obj"
   "CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj"
   "MuseumGame.exe"

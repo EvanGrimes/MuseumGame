@@ -5,9 +5,12 @@
 #include <iostream>
 
 namespace Assets {
+    extern int screenWidth, screenHeight;
     extern std::string gameState;
 
     extern Texture2D titleBG;
+    extern Texture2D startBtn;
+    extern Texture2D startHover;
 
     void LoadTitle();
 }

@@ -92,6 +92,12 @@
 		<Unit filename="E:/C++ Projects/MuseumGame/Game.h">
 			<Option target="MuseumGame"/>
 		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/GameState.cpp">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/GameState.h">
+			<Option target="MuseumGame"/>
+		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/Launcher.cpp">
 			<Option target="MuseumGame"/>
 		</Unit>

@@ -28,8 +28,10 @@ void TitleScreen::render() {
 
     DrawFPS(10, 10);
 
-    /*if (startBtnState == 0) {
+    if (startBtnState == 0) {
+        DrawRectangleRec(startBtnBounds, RED);
         DrawTexture(Assets::startBtn, (int)startBtnBounds.x, (int)startBtnBounds.y, WHITE);
+        //
     }
 
     //If startBtnState is 1, it draws the hovered  start button image
@@ -37,7 +39,7 @@ void TitleScreen::render() {
         DrawTexture(Assets::startHover, (int)startBtnBounds.x, (int)startBtnBounds.y, WHITE);
     }
 
-    if (settBtnState == 0) {
+    /*if (settBtnState == 0) {
         DrawTexture(Assets::settBtn,(int)settBtnBounds.x, (int)settBtnBounds.y , WHITE);
     }
     //If settBtnState is 1, it draws the hovered settings button image
