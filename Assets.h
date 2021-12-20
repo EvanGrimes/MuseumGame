@@ -11,8 +11,17 @@ namespace Assets {
     extern Texture2D titleBG;
     extern Texture2D startBtn;
     extern Texture2D startHover;
+    extern Texture2D settBtn;
+    extern Texture2D exitBtn;
+
+    extern Texture2D pillar;
+    extern Texture2D floor;
+    extern Texture2D wall;
+    extern Texture2D wallTop;
+
 
     void LoadTitle();
+    void LoadGame();
 }
 
 

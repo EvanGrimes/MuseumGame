@@ -7,12 +7,32 @@ CMakeFiles/MuseumGame.dir/Assets.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Game.cpp
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Game.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../GameState.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Map.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../MapReader.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../TitleScreen.h
+
+CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../Assets.h
+CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../GameState.cpp
+CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../GameState.h
+CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../Map.h
+CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../MapReader.h
 
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Game.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../GameState.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Launcher.cpp
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Map.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../MapReader.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../TitleScreen.h
+
+CMakeFiles/MuseumGame.dir/Map.cpp.obj: ../Assets.h
+CMakeFiles/MuseumGame.dir/Map.cpp.obj: ../Map.cpp
+CMakeFiles/MuseumGame.dir/Map.cpp.obj: ../Map.h
+CMakeFiles/MuseumGame.dir/Map.cpp.obj: ../MapReader.h
+
+CMakeFiles/MuseumGame.dir/MapReader.cpp.obj: ../MapReader.cpp
+CMakeFiles/MuseumGame.dir/MapReader.cpp.obj: ../MapReader.h
 
 CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj: ../TitleScreen.cpp

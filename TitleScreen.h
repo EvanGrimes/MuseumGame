@@ -8,21 +8,15 @@
 class TitleScreen {
 public:
 
-    // The button collision boxes
     Rectangle startBtnBounds = {370,300,257, 97 };
-    Rectangle settBtnBounds = { 355,330,255, 112 };
+    Rectangle settBtnBounds = { 950,550,50, 50 };
     Rectangle exitBtnBounds = { 0,550,50, 50 };
-    Rectangle controlBtnBounds = { 950,550,50, 50 };
 
-    //The button states (determines the texture displayed)
-    int startBtnState = 0;               // Button state: 0-NORMAL, 1-MOUSE_HOVER
-    int settBtnState = 0;               // Button state: 0-NORMAL, 1-MOUSE_HOVER
+    int startBtnState = 0;
 
-    //Button actions. If clicked, they are true, otherwise, it is false
-    bool startBtnAction = false;         // Button action should be activated
-    bool settBtnAction = false;          // Button action should be activated
+    bool startBtnAction = false;
+    bool settBtnAction = false;
     bool exitBtnAction = false;
-    bool controlBtnAction = false;
 
     Vector2 mousePoint = { 0.0f, 0.0f };
 
@@ -31,7 +25,6 @@ public:
     void tickStartBtn();
     void tickSettBtn();
     void tickExitBtn();
-    void tickControlsBtn();
 };
 
 

@@ -250,6 +250,60 @@ Launcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Launcher.cpp.s
 .PHONY : Launcher.cpp.s
 
+Map.obj: Map.cpp.obj
+
+.PHONY : Map.obj
+
+# target to build an object file
+Map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Map.cpp.obj
+.PHONY : Map.cpp.obj
+
+Map.i: Map.cpp.i
+
+.PHONY : Map.i
+
+# target to preprocess a source file
+Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Map.cpp.i
+.PHONY : Map.cpp.i
+
+Map.s: Map.cpp.s
+
+.PHONY : Map.s
+
+# target to generate assembly for a file
+Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Map.cpp.s
+.PHONY : Map.cpp.s
+
+MapReader.obj: MapReader.cpp.obj
+
+.PHONY : MapReader.obj
+
+# target to build an object file
+MapReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/MapReader.cpp.obj
+.PHONY : MapReader.cpp.obj
+
+MapReader.i: MapReader.cpp.i
+
+.PHONY : MapReader.i
+
+# target to preprocess a source file
+MapReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/MapReader.cpp.i
+.PHONY : MapReader.cpp.i
+
+MapReader.s: MapReader.cpp.s
+
+.PHONY : MapReader.s
+
+# target to generate assembly for a file
+MapReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/MapReader.cpp.s
+.PHONY : MapReader.cpp.s
+
 TitleScreen.obj: TitleScreen.cpp.obj
 
 .PHONY : TitleScreen.obj
@@ -298,6 +352,12 @@ help:
 	@echo ... Launcher.obj
 	@echo ... Launcher.i
 	@echo ... Launcher.s
+	@echo ... Map.obj
+	@echo ... Map.i
+	@echo ... Map.s
+	@echo ... MapReader.obj
+	@echo ... MapReader.i
+	@echo ... MapReader.s
 	@echo ... TitleScreen.obj
 	@echo ... TitleScreen.i
 	@echo ... TitleScreen.s

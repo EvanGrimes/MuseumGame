@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/C++ Projects/MuseumGame/Game.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Game.cpp.obj"
   "E:/C++ Projects/MuseumGame/GameState.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/GameState.cpp.obj"
   "E:/C++ Projects/MuseumGame/Launcher.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Launcher.cpp.obj"
+  "E:/C++ Projects/MuseumGame/Map.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Map.cpp.obj"
+  "E:/C++ Projects/MuseumGame/MapReader.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/MapReader.cpp.obj"
   "E:/C++ Projects/MuseumGame/TitleScreen.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

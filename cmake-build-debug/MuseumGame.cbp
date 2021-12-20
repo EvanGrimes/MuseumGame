@@ -101,6 +101,18 @@
 		<Unit filename="E:/C++ Projects/MuseumGame/Launcher.cpp">
 			<Option target="MuseumGame"/>
 		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/Map.cpp">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/Map.h">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/MapReader.cpp">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/MapReader.h">
+			<Option target="MuseumGame"/>
+		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/TitleScreen.cpp">
 			<Option target="MuseumGame"/>
 		</Unit>

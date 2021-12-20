@@ -10,6 +10,7 @@
 #include <raylib.h>
 
 #include "Assets.h"
+#include "Map.h"
 
 typedef struct Player {
     Vector2 position;
@@ -18,12 +19,33 @@ typedef struct Player {
 
 
 class GameState {
+public:
+
+    const char message[255] = "This text will one day be replaced by some kind of dope-ass intro sequence explaining the\nstory of the game. When that is introduced, this text shall cease to exist, so savour it\nwhile you still can!";
+
+
+    Camera2D camera;
+
     void tick();
     void render();
-    void IntroSeq();
+
+    float deltaTime = 0;
+
+    int framesCounter = 0;
+
+    int framesSpeed = 8;
+
+    int currentFrame = 0;
+
+    int IntroTimeCount = 0;
+    double IntroFrames = 0;
+
+    Map map;
 
     Player player;
+
     Rectangle playerRect = {  player.position.x , player.position.y + 20, 20, 20};
+
     void startPlayer() {
         player = {{0, 0}, 0};
 
@@ -34,7 +56,7 @@ class GameState {
 
     bool Moving;
 
-    void UpdatePlayer(Player *playerP, /*EnvItem *envItems, int envItemsLength,*/ float delta)
+    void UpdatePlayer(Player *playerP, float delta)
     {
         Moving = false;
 
@@ -44,19 +66,20 @@ class GameState {
 
             if(!IsKeyDown(KEY_S)) {
 
-                if(!checkCollisionFuture()) {
+                //if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.y -= PLAYER_HOR_SPD * delta;
+                    printf("move up");
 
-                    lastAnim = "up";
-                }
+                //    lastAnim = "up";
+                //}
 
-                if(checkCollisionFuture()) {
-                    Moving = true;
-                    playerP->position.y += PLAYER_HOR_SPD * delta;
-                }
+                //if(checkCollisionFuture()) {
+                    //Moving = true;
+                    //playerP->position.y += PLAYER_HOR_SPD * delta;
+                //}
 
-                lastAnim = "up";
+                //lastAnim = "up";
             }
         }
 
@@ -64,18 +87,18 @@ class GameState {
 
             if(!IsKeyDown(KEY_W)) {
 
-                if(!checkCollisionFuture()) {
+                //if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.y += PLAYER_HOR_SPD * delta;
-                    lastAnim = "down";
-                }
+                //    lastAnim = "down";
+                //}
 
-                if(checkCollisionFuture()) {
-                    Moving = true;
-                    playerP->position.y -= PLAYER_HOR_SPD * delta;
-                }
+                //if(checkCollisionFuture()) {
+                    //Moving = true;
+                    //playerP->position.y -= PLAYER_HOR_SPD * delta;
+                //}
 
-                lastAnim = "down";
+                //lastAnim = "down";
             }
         }
 
@@ -84,19 +107,19 @@ class GameState {
 
             if(!IsKeyDown(KEY_D)) {
 
-                if(!checkCollisionFuture()) {
+                //if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.x -= PLAYER_HOR_SPD * delta;
-                    lastAnim = "left";
-                }
+                //    lastAnim = "left";
+                //}
 
                 //If it returns true, it moves the player backward so that you don't go into the tile
-                if(checkCollisionFuture()) {
-                    Moving = true;
-                    playerP->position.x += PLAYER_HOR_SPD * delta;
-                }
+                //if(checkCollisionFuture()) {
+                    //Moving = true;
+                    //playerP->position.x += PLAYER_HOR_SPD * delta;
+                //}
 
-                lastAnim = "left";
+                //lastAnim = "left";
             }
         }
 
@@ -104,17 +127,17 @@ class GameState {
         if (IsKeyDown(KEY_D)) {
 
             if(!IsKeyDown(KEY_A)) {
-                if(!checkCollisionFuture()) {
+                //if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.x += PLAYER_HOR_SPD * delta;
 
-                    lastAnim = "right";
-                }
-                if(checkCollisionFuture()) {
-                    Moving = true;
-                    playerP->position.x -= PLAYER_HOR_SPD * delta;
-                }
-                lastAnim = "right";
+                //    lastAnim = "right";
+                //}
+                //if(checkCollisionFuture()) {
+                    //Moving = true;
+                    //playerP->position.x -= PLAYER_HOR_SPD * delta;
+                //}
+                //lastAnim = "right";
             }
         }
 

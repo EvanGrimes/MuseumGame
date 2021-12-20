@@ -8,12 +8,32 @@ CMakeFiles/MuseumGame.dir/Game.cpp.obj
  E:/C++ Projects/MuseumGame/Assets.h
  E:/C++ Projects/MuseumGame/Game.cpp
  E:/C++ Projects/MuseumGame/Game.h
+ E:/C++ Projects/MuseumGame/GameState.h
+ E:/C++ Projects/MuseumGame/Map.h
+ E:/C++ Projects/MuseumGame/MapReader.h
  E:/C++ Projects/MuseumGame/TitleScreen.h
+CMakeFiles/MuseumGame.dir/GameState.cpp.obj
+ E:/C++ Projects/MuseumGame/Assets.h
+ E:/C++ Projects/MuseumGame/GameState.cpp
+ E:/C++ Projects/MuseumGame/GameState.h
+ E:/C++ Projects/MuseumGame/Map.h
+ E:/C++ Projects/MuseumGame/MapReader.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj
  E:/C++ Projects/MuseumGame/Assets.h
  E:/C++ Projects/MuseumGame/Game.h
+ E:/C++ Projects/MuseumGame/GameState.h
  E:/C++ Projects/MuseumGame/Launcher.cpp
+ E:/C++ Projects/MuseumGame/Map.h
+ E:/C++ Projects/MuseumGame/MapReader.h
  E:/C++ Projects/MuseumGame/TitleScreen.h
+CMakeFiles/MuseumGame.dir/Map.cpp.obj
+ E:/C++ Projects/MuseumGame/Assets.h
+ E:/C++ Projects/MuseumGame/Map.cpp
+ E:/C++ Projects/MuseumGame/Map.h
+ E:/C++ Projects/MuseumGame/MapReader.h
+CMakeFiles/MuseumGame.dir/MapReader.cpp.obj
+ E:/C++ Projects/MuseumGame/MapReader.cpp
+ E:/C++ Projects/MuseumGame/MapReader.h
 CMakeFiles/MuseumGame.dir/TitleScreen.cpp.obj
  E:/C++ Projects/MuseumGame/Assets.h
  E:/C++ Projects/MuseumGame/TitleScreen.cpp
