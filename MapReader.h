@@ -3,16 +3,13 @@
 
 #include <raylib.h>
 #include <iostream>
-#include <vector>
 
 class MapReader {
 public:
 
-    static const int mapSize = 64 * 7;
+    static const int mapSize = 66 * 23;
 
     char mapTileData[mapSize] = {0};
-
-    bool solid[mapSize] = {true};
 
     Rectangle collision[mapSize] = {{0, 0, 35, 35}};
 
@@ -20,7 +17,10 @@ public:
 
     void readMapData();
     void setMapCollision();
+
 private:
+
      Rectangle destRect = {0, 0, 0, 0};
+
 };
 #endif //GAME1_MAPREADER_H

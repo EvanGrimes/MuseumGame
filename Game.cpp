@@ -28,13 +28,15 @@ void Game::loop() {
                     gameState.camera = { {0, 0}, {0, 0}, 0.0f, 0 };
                     gameState.camera.target = (Vector2){ gameState.player.position.x + 20, gameState.player.position.y + 20 };
                     gameState.camera.offset = (Vector2){ 1000/2.0, 600/2.0 };
-                    gameState.camera.zoom = 1.5f;
+                    gameState.camera.zoom = 2.5f;
 
                     gameState.map.mapReader.setMapCollision();
 
                     gameState.startPlayer();
 
                     printf("Game assets inited\n");
+
+                    HideCursor();
 
                     gameInit++;
                 }

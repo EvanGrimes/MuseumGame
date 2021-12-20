@@ -1,11 +1,8 @@
-//
-// Created by 18149 on 12/14/2021.
-//
-
 #ifndef MUSEUMGAME_GAMESTATE_H
 #define MUSEUMGAME_GAMESTATE_H
 
-#define PLAYER_HOR_SPD 200.0f
+#define PLAYER_HOR_SPD 150.0f
+#define BACKGROUND  (Color){ 42, 42, 47, 255 }
 
 #include <raylib.h>
 
@@ -54,7 +51,38 @@ public:
         player.speed = 0;
     }
 
+    std::string lastAnim;
+
     bool Moving;
+
+    int count = 0;
+
+
+    bool checkCollisionFuture() {
+        for(count = 0; count < MapReader::mapSize; count++){
+
+            playerRect = { player.position.x + 5, player.position.y + 14, 8, 15 };
+
+            if(lastAnim == "left" || "down") {
+                if (CheckCollisionRecs(map.mapReader.collision[count],
+                                       (Rectangle) {playerRect.x + 1, playerRect.y + 0.5f, playerRect.width,
+                                                    playerRect.height})) {
+                    printf("COLLISION\n");
+                    return true;
+                }
+            }
+            if(lastAnim == "right" || "up"){
+                if(CheckCollisionRecs(map.mapReader.collision[count],
+                                      (Rectangle){playerRect.x + 1, playerRect.y + 0.1f, playerRect.width,
+                                                  playerRect.height})){
+                    printf("COLLISION\n");
+                    return true;
+                }
+            }
+            DrawRectangleRec(map.mapReader.collision[count], RED);
+        }
+        return false;
+    }
 
     void UpdatePlayer(Player *playerP, float delta)
     {
@@ -66,20 +94,19 @@ public:
 
             if(!IsKeyDown(KEY_S)) {
 
-                //if(!checkCollisionFuture()) {
+                if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.y -= PLAYER_HOR_SPD * delta;
-                    printf("move up");
 
-                //    lastAnim = "up";
-                //}
+                    lastAnim = "up";
+                }
 
-                //if(checkCollisionFuture()) {
-                    //Moving = true;
-                    //playerP->position.y += PLAYER_HOR_SPD * delta;
-                //}
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    playerP->position.y += PLAYER_HOR_SPD * delta;
+                }
 
-                //lastAnim = "up";
+                lastAnim = "up";
             }
         }
 
@@ -87,18 +114,17 @@ public:
 
             if(!IsKeyDown(KEY_W)) {
 
-                //if(!checkCollisionFuture()) {
+                if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.y += PLAYER_HOR_SPD * delta;
-                //    lastAnim = "down";
-                //}
+                    lastAnim = "down";
+                }
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    playerP->position.y -= PLAYER_HOR_SPD * delta;
+                }
 
-                //if(checkCollisionFuture()) {
-                    //Moving = true;
-                    //playerP->position.y -= PLAYER_HOR_SPD * delta;
-                //}
-
-                //lastAnim = "down";
+                lastAnim = "down";
             }
         }
 
@@ -107,19 +133,19 @@ public:
 
             if(!IsKeyDown(KEY_D)) {
 
-                //if(!checkCollisionFuture()) {
+                if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.x -= PLAYER_HOR_SPD * delta;
-                //    lastAnim = "left";
-                //}
+                    lastAnim = "left";
+                }
 
                 //If it returns true, it moves the player backward so that you don't go into the tile
-                //if(checkCollisionFuture()) {
-                    //Moving = true;
-                    //playerP->position.x += PLAYER_HOR_SPD * delta;
-                //}
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    playerP->position.x += PLAYER_HOR_SPD * delta;
+                }
 
-                //lastAnim = "left";
+                lastAnim = "left";
             }
         }
 
@@ -127,17 +153,17 @@ public:
         if (IsKeyDown(KEY_D)) {
 
             if(!IsKeyDown(KEY_A)) {
-                //if(!checkCollisionFuture()) {
+                if(!checkCollisionFuture()) {
                     Moving = true;
                     playerP->position.x += PLAYER_HOR_SPD * delta;
 
-                //    lastAnim = "right";
-                //}
-                //if(checkCollisionFuture()) {
-                    //Moving = true;
-                    //playerP->position.x -= PLAYER_HOR_SPD * delta;
-                //}
-                //lastAnim = "right";
+                    lastAnim = "right";
+                }
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    playerP->position.x -= PLAYER_HOR_SPD * delta;
+                }
+                lastAnim = "right";
             }
         }
 

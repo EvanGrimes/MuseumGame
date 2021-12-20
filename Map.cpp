@@ -13,14 +13,14 @@ Map::Map(){
 }
 
 void Map::DrawMap() {
-    for (int x = 0; x < 24; ++x) {
-        for (int y = 0; y < 24; y++) {
+    for (int x = 0; x < 23; ++x) {
+        for (int y = 0; y < 66; y++) {
 
             destRect.x = (float)y * 16;
             destRect.y = (float)x * 16;
 
 
-            switch (mapReader.mapTileData[x * 24 + y]) {
+            switch (mapReader.mapTileData[x * 66 + y]) {
 
                 case '0':
                     DrawTextureRec(Assets::floor, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
@@ -34,8 +34,8 @@ void Map::DrawMap() {
                 case '3':
                     DrawTextureRec(Assets::wallTop, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
-                case '4':
-                    //DrawTextureRec(Assets::bushTall, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                case 'p':
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case '5':
                     //DrawTextureRec(Assets::bushSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);

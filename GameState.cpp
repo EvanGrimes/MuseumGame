@@ -20,13 +20,13 @@ void GameState::tick() {
     camera.target.x = player.position.x;
     camera.target.y = player.position.y;
 
-    playerRect = { player.position.x, player.position.y, 8, 15 };
+    //playerRect = { player.position.x, player.position.y, 8, 15 };
 
     render();
 }
 
 void GameState::render() {
-    ClearBackground(GREEN);
+    ClearBackground(BACKGROUND);
     map.DrawMap();
     DrawRectangleRec(playerRect, RED);
 }

@@ -14,6 +14,7 @@ namespace Assets{
     Texture2D floor;
     Texture2D wall;
     Texture2D wallTop;
+    Texture2D painting;
 
     void LoadTitle(){
         titleBG = LoadTexture("../res/textures/BGPlace.png");
@@ -28,6 +29,7 @@ namespace Assets{
         floor = LoadTexture("../res/textures/floor.png");
         wall = LoadTexture("../res/textures/wall.png");
         wallTop = LoadTexture("../res/textures/wallTop.png");
+        painting = LoadTexture("../res/textures/painting2.png");
 
     }
 }
