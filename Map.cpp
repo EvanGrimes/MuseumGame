@@ -34,14 +34,48 @@ void Map::DrawMap() {
                 case '3':
                     DrawTextureRec(Assets::wallTop, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
-                case 'p':
+                case '4':
+                    DrawTextureRec(Assets::rope, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'm':
+                    //Mona Lisa
                     DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
-                case '5':
-                    //DrawTextureRec(Assets::bushSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                case 'S':
+                    //Starr Night
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
-                case '6':
-                    //DrawTextureRec(Assets::sign, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                case 's':
+                    //Scream
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'p':
+                    //Pipe
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'f':
+                    //Farm
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'G':
+                    //Girl
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'w':
+                    //Wave
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'a':
+                    //Apple Man
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'g':
+                    //George Washington
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'h':
+                    //House Man
+                    DrawTextureRec(Assets::painting, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
 
                 default:

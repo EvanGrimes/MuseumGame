@@ -7,6 +7,7 @@
 namespace Assets {
     extern int screenWidth, screenHeight;
     extern std::string gameState;
+    extern int BattleNum;
 
     extern Texture2D titleBG;
     extern Texture2D startBtn;
@@ -18,6 +19,7 @@ namespace Assets {
     extern Texture2D floor;
     extern Texture2D wall;
     extern Texture2D wallTop;
+    extern Texture2D rope;
     extern Texture2D painting;
 
 

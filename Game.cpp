@@ -47,6 +47,65 @@ void Game::loop() {
             //}
         }
 
+        if(Assets::gameState == "battle"){
+            switch(battleManager.BattlePicker(Assets::BattleNum)){
+                case 'M':
+                    if(!MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'S':
+                    if(!MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 's':
+                    if(!MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'p':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'f':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'G':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'w':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'a':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'g':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                case 'h':
+                    if(MonaObj.IsBossDead){
+                        MonaObj.tick();
+                    }
+                    break;
+                default:
+                    printf("ERROR: NO MATCHING BATTLE. CLOSING GAME");
+                    Assets::gameState = "exit";
+                    break;
+            }
+        }
+
         if(Assets::gameState == "exit"){
             break;
         }

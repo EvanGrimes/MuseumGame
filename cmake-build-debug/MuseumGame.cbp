@@ -86,6 +86,18 @@
 		<Unit filename="E:/C++ Projects/MuseumGame/Assets.h">
 			<Option target="MuseumGame"/>
 		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/BattleManager.cpp">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/BattleManager.h">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/Battles/MonaBattle.h">
+			<Option target="MuseumGame"/>
+		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/Game.cpp">
 			<Option target="MuseumGame"/>
 		</Unit>

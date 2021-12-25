@@ -11,6 +11,9 @@ public:
 
     char mapTileData[mapSize] = {0};
 
+    bool IsPainting[mapSize] = {false};
+    int PaintingType[mapSize] = {0};
+
     Rectangle collision[mapSize] = {{0, 0, 35, 35}};
 
     int count = 0;

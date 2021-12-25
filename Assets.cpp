@@ -2,6 +2,7 @@
 
 namespace Assets{
     std::string gameState;
+    int BattleNum;
 
     int screenWidth = 1000; int screenHeight = 600;
     Texture2D titleBG;
@@ -14,6 +15,7 @@ namespace Assets{
     Texture2D floor;
     Texture2D wall;
     Texture2D wallTop;
+    Texture2D rope;
     Texture2D painting;
 
     void LoadTitle(){
@@ -30,6 +32,7 @@ namespace Assets{
         wall = LoadTexture("../res/textures/wall.png");
         wallTop = LoadTexture("../res/textures/wallTop.png");
         painting = LoadTexture("../res/textures/painting2.png");
+        rope = LoadTexture("../res/textures/rope.png");
 
     }
 }

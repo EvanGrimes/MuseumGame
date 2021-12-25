@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/C++ Projects/MuseumGame/Assets.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Assets.cpp.obj"
+  "E:/C++ Projects/MuseumGame/BattleManager.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj"
+  "E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj"
   "E:/C++ Projects/MuseumGame/Game.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Game.cpp.obj"
   "E:/C++ Projects/MuseumGame/GameState.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/GameState.cpp.obj"
   "E:/C++ Projects/MuseumGame/Launcher.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Launcher.cpp.obj"

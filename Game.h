@@ -2,9 +2,13 @@
 #define MUSEUMGAME_GAME_H
 #include <raylib.h>
 #include "Assets.h"
+#include "BattleManager.h"
 
 #include "TitleScreen.h"
 #include "GameState.h"
+
+#include "Battles/MonaBattle.h"
+
 
 class Game {
 public:
@@ -14,6 +18,13 @@ public:
     int gameInit = 0;
 
     int IntroCount = 0;
+
+    Map map;
+    BattleManager battleManager;
+
+    MonaBattle MonaObj;
+
+
 
     TitleScreen titleScreen;
     GameState gameState;

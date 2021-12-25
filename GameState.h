@@ -50,10 +50,7 @@ public:
 
         player.speed = 0;
     }
-
     std::string lastAnim;
-
-    bool Moving;
 
     int count = 0;
 
@@ -86,26 +83,19 @@ public:
 
     void UpdatePlayer(Player *playerP, float delta)
     {
-        Moving = false;
-
-        //Checks for up first
         if (IsKeyDown(KEY_W)){
-
 
             if(!IsKeyDown(KEY_S)) {
 
                 if(!checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.y -= PLAYER_HOR_SPD * delta;
 
                     lastAnim = "up";
                 }
 
                 if(checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.y += PLAYER_HOR_SPD * delta;
                 }
-
                 lastAnim = "up";
             }
         }
@@ -115,12 +105,10 @@ public:
             if(!IsKeyDown(KEY_W)) {
 
                 if(!checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.y += PLAYER_HOR_SPD * delta;
                     lastAnim = "down";
                 }
                 if(checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.y -= PLAYER_HOR_SPD * delta;
                 }
 
@@ -128,20 +116,15 @@ public:
             }
         }
 
-        //Checks for movement left
         if (IsKeyDown(KEY_A)) {
 
             if(!IsKeyDown(KEY_D)) {
 
                 if(!checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.x -= PLAYER_HOR_SPD * delta;
                     lastAnim = "left";
                 }
-
-                //If it returns true, it moves the player backward so that you don't go into the tile
                 if(checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.x += PLAYER_HOR_SPD * delta;
                 }
 
@@ -149,18 +132,14 @@ public:
             }
         }
 
-        //Checks for movement right
         if (IsKeyDown(KEY_D)) {
 
             if(!IsKeyDown(KEY_A)) {
                 if(!checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.x += PLAYER_HOR_SPD * delta;
-
                     lastAnim = "right";
                 }
                 if(checkCollisionFuture()) {
-                    Moving = true;
                     playerP->position.x -= PLAYER_HOR_SPD * delta;
                 }
                 lastAnim = "right";
@@ -169,6 +148,27 @@ public:
 
     }
 
-};
+    void PaintingPress(){
+            if (CheckCollisionRecs(map.mapReader.collision[count],
+                                   (Rectangle) {playerRect.x + 1, playerRect.y + 0.5f, playerRect.width,
+                                                playerRect.height})) {
+                if(CheckForPainting()){
+                    if(IsKeyPressed(KEY_E)){
+                        printf("Painting Pressed\n");
+                        std::cout << map.mapReader.PaintingType[count] << "\n";
+                        Assets::BattleNum = map.mapReader.PaintingType[count];
+                        Assets::gameState = "battle";
+                    }
+                }
+            }
+    }
 
-#endif //MUSEUMGAME_GAMESTATE_H
+    bool CheckForPainting(){
+        if(map.mapReader.IsPainting[count]){
+            return true;
+        }
+        else
+            return false;
+    }
+};
+#endif

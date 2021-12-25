@@ -12,6 +12,22 @@ raylib.h
 iostream
 -
 
+E:/C++ Projects/MuseumGame/BattleManager.cpp
+BattleManager.h
+E:/C++ Projects/MuseumGame/BattleManager.h
+
+E:/C++ Projects/MuseumGame/BattleManager.h
+Battles/MonaBattle.h
+E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
+
+E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp
+MonaBattle.h
+E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
+
+E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
+
 E:/C++ Projects/MuseumGame/Game.cpp
 Game.h
 E:/C++ Projects/MuseumGame/Game.h
@@ -21,10 +37,14 @@ raylib.h
 -
 Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
+BattleManager.h
+E:/C++ Projects/MuseumGame/BattleManager.h
 TitleScreen.h
 E:/C++ Projects/MuseumGame/TitleScreen.h
 GameState.h
 E:/C++ Projects/MuseumGame/GameState.h
+Battles/MonaBattle.h
+E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
 
 E:/C++ Projects/MuseumGame/GameState.h
 raylib.h

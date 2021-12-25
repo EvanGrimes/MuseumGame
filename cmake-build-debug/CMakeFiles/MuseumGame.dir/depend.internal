@@ -4,8 +4,19 @@
 CMakeFiles/MuseumGame.dir/Assets.cpp.obj
  E:/C++ Projects/MuseumGame/Assets.cpp
  E:/C++ Projects/MuseumGame/Assets.h
+CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj
+ E:/C++ Projects/MuseumGame/Assets.h
+ E:/C++ Projects/MuseumGame/BattleManager.cpp
+ E:/C++ Projects/MuseumGame/BattleManager.h
+ E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
+CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj
+ E:/C++ Projects/MuseumGame/Assets.h
+ E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp
+ E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj
  E:/C++ Projects/MuseumGame/Assets.h
+ E:/C++ Projects/MuseumGame/BattleManager.h
+ E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
  E:/C++ Projects/MuseumGame/Game.cpp
  E:/C++ Projects/MuseumGame/Game.h
  E:/C++ Projects/MuseumGame/GameState.h
@@ -20,6 +31,8 @@ CMakeFiles/MuseumGame.dir/GameState.cpp.obj
  E:/C++ Projects/MuseumGame/MapReader.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj
  E:/C++ Projects/MuseumGame/Assets.h
+ E:/C++ Projects/MuseumGame/BattleManager.h
+ E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
  E:/C++ Projects/MuseumGame/Game.h
  E:/C++ Projects/MuseumGame/GameState.h
  E:/C++ Projects/MuseumGame/Launcher.cpp

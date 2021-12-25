@@ -169,6 +169,60 @@ Assets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Assets.cpp.s
 .PHONY : Assets.cpp.s
 
+BattleManager.obj: BattleManager.cpp.obj
+
+.PHONY : BattleManager.obj
+
+# target to build an object file
+BattleManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj
+.PHONY : BattleManager.cpp.obj
+
+BattleManager.i: BattleManager.cpp.i
+
+.PHONY : BattleManager.i
+
+# target to preprocess a source file
+BattleManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/BattleManager.cpp.i
+.PHONY : BattleManager.cpp.i
+
+BattleManager.s: BattleManager.cpp.s
+
+.PHONY : BattleManager.s
+
+# target to generate assembly for a file
+BattleManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/BattleManager.cpp.s
+.PHONY : BattleManager.cpp.s
+
+Battles/MonaBattle.obj: Battles/MonaBattle.cpp.obj
+
+.PHONY : Battles/MonaBattle.obj
+
+# target to build an object file
+Battles/MonaBattle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj
+.PHONY : Battles/MonaBattle.cpp.obj
+
+Battles/MonaBattle.i: Battles/MonaBattle.cpp.i
+
+.PHONY : Battles/MonaBattle.i
+
+# target to preprocess a source file
+Battles/MonaBattle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.i
+.PHONY : Battles/MonaBattle.cpp.i
+
+Battles/MonaBattle.s: Battles/MonaBattle.cpp.s
+
+.PHONY : Battles/MonaBattle.s
+
+# target to generate assembly for a file
+Battles/MonaBattle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.s
+.PHONY : Battles/MonaBattle.cpp.s
+
 Game.obj: Game.cpp.obj
 
 .PHONY : Game.obj
@@ -343,6 +397,12 @@ help:
 	@echo ... Assets.obj
 	@echo ... Assets.i
 	@echo ... Assets.s
+	@echo ... BattleManager.obj
+	@echo ... BattleManager.i
+	@echo ... BattleManager.s
+	@echo ... Battles/MonaBattle.obj
+	@echo ... Battles/MonaBattle.i
+	@echo ... Battles/MonaBattle.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s

@@ -33,5 +33,15 @@
   "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
   "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\MapReader.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\MapReader.cpp\"",
   "file": "E:/C++ Projects/MuseumGame/MapReader.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\BattleManager.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\BattleManager.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/BattleManager.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\MonaBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\MonaBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp"
 }
 ]
