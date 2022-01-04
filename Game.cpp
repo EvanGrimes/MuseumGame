@@ -9,13 +9,13 @@ void Game::loop() {
         }
 
         if (Assets::gameState == "game") {
-            if(gameStart == 0){
-                //ClearBackground(BLACK);
-                //DrawText(TextSubtext(gameState.message, 0, (int) gameState.IntroFrames/10 ), 40, 60, 20, WHITE);
-                //gameState.IntroFrames += 1.5;
-                //gameState.IntroTimeCount++;
-                //IntroCount++;
-             }
+            //if(gameStart == 0){
+            //    ClearBackground(BLACK);
+            //    DrawText(TextSubtext(gameState.message, 0, (int) gameState.IntroFrames/10 ), 40, 60, 20, WHITE);
+            //    gameState.IntroFrames += 1.5;
+            //    gameState.IntroTimeCount++;
+            //    IntroCount++;
+            // }
 
             //if(IntroCount >= 1560){
                 if(gameInit == 0){
@@ -36,8 +36,9 @@ void Game::loop() {
 
                     printf("Game assets inited\n");
 
-                    HideCursor();
+                    //HideCursor();
 
+                    PlayMusicStream(Assets::MainBGM);
                     gameInit++;
                 }
 

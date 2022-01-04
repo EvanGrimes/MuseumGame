@@ -1,25 +1,20 @@
 #include "Map.h"
 
-int temp;
-
 Map::Map(){
     mapReader.readMapData();
     sourceRec.x = 0;
     sourceRec.y = 0;
-    sourceRec.width = destRect.width = 32;
-    sourceRec.height = destRect.height = 32;
+    sourceRec.width = destRect.width = 14;
+    sourceRec.height = destRect.height = 14;
     destRect.x = destRect.y = 0;
-
 }
 
 void Map::DrawMap() {
+    destRect.x = destRect.y = 0;
     for (int x = 0; x < 23; ++x) {
         for (int y = 0; y < 66; y++) {
-
             destRect.x = (float)y * 16;
             destRect.y = (float)x * 16;
-
-
             switch (mapReader.mapTileData[x * 66 + y]) {
 
                 case '0':

@@ -14,7 +14,7 @@ public:
     bool IsPainting[mapSize] = {false};
     int PaintingType[mapSize] = {0};
 
-    Rectangle collision[mapSize] = {{0, 0, 35, 35}};
+    Rectangle collision[mapSize] = {{0, 0, 14, 14}};
 
     int count = 0;
 

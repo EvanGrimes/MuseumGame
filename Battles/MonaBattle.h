@@ -7,10 +7,22 @@ class MonaBattle {
 public:
     bool IsBossDead = false;
 
-    Rectangle FightBtn = {370,300,257, 97 };
+    Rectangle FightBtn = {20,475,257, 97 };
+    Rectangle ItemBtn = {370,475,257, 97 };
+    Rectangle LeaveBtn = {720,475,257, 97 };
 
     void tick();
     void render();
+
+    bool FightBtnAction = false;
+    bool ItemBtnAction = false;
+    bool LeaveBtnAction = false;
+
+    Vector2 mousePoint = { 0.0f, 0.0f };
+
+    void tickFight();
+    void tickItem();
+    void tickLeave();
 };
 
 

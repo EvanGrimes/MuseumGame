@@ -59,7 +59,7 @@ void MapReader::setMapCollision() {
                 case '2':
                     //PILLAR
                     if(count == 0){
-                        collision[count] = {destRect.x + 5.5f, destRect.y + 3,7.3, 14};
+                        collision[count] = {destRect.x + 2, destRect.y + 3,7.3, 14};
                         count++;
                         break;
                     }
@@ -67,7 +67,7 @@ void MapReader::setMapCollision() {
                         break;
                     }
                     count++;
-                    collision[count] = {destRect.x + 5.5f, destRect.y + 3,7.3, 14};
+                    collision[count] = {destRect.x + 5, destRect.y + 3,7.3, 14};
                     break;
                 case '3':
                     //WALLTOP
@@ -80,7 +80,7 @@ void MapReader::setMapCollision() {
                         break;
                     }
                     count++;
-                    collision[count] = {destRect.x + 2, destRect.y + 3,7.3, 5};
+                    collision[count] = {destRect.x + 2, destRect.y + 3,14, 14};
                     break;
                 case '4':
                     //WALLTOP

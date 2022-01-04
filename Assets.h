@@ -15,12 +15,14 @@ namespace Assets {
     extern Texture2D settBtn;
     extern Texture2D exitBtn;
 
+    extern Texture2D playerTemp;
     extern Texture2D pillar;
     extern Texture2D floor;
     extern Texture2D wall;
     extern Texture2D wallTop;
     extern Texture2D rope;
     extern Texture2D painting;
+    extern Music MainBGM;
 
 
     void LoadTitle();

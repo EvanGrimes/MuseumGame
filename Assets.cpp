@@ -11,12 +11,14 @@ namespace Assets{
     Texture2D settBtn;
     Texture2D exitBtn;
 
+    Texture2D playerTemp;
     Texture2D pillar;
     Texture2D floor;
     Texture2D wall;
     Texture2D wallTop;
     Texture2D rope;
     Texture2D painting;
+    Music MainBGM;
 
     void LoadTitle(){
         titleBG = LoadTexture("../res/textures/BGPlace.png");
@@ -27,12 +29,14 @@ namespace Assets{
     }
 
     void LoadGame(){
+        playerTemp = LoadTexture("../res/sprites/playerTemp2.png");
         pillar = LoadTexture("../res/textures/pillar.png");
         floor = LoadTexture("../res/textures/floor.png");
         wall = LoadTexture("../res/textures/wall.png");
         wallTop = LoadTexture("../res/textures/wallTop.png");
         painting = LoadTexture("../res/textures/painting2.png");
         rope = LoadTexture("../res/textures/rope.png");
+        MainBGM = LoadMusicStream("../res/music/MainMusic.ogg");
 
     }
 }
