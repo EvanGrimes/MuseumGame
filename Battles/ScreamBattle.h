@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_SCREAMBATTLE_H
+#define MUSEUMGAME_SCREAMBATTLE_H
+
+
+class ScreamBattle {
+
+};
+
+
+#endif //MUSEUMGAME_SCREAMBATTLE_H

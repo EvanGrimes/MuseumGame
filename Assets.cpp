@@ -1,4 +1,5 @@
 #include "Assets.h"
+#include <raylib.h>
 
 namespace Assets{
     std::string gameState;
@@ -20,6 +21,11 @@ namespace Assets{
     Texture2D painting;
     Music MainBGM;
 
+    Texture2D FightBtn;
+    Texture2D ItemBtn;
+    Texture2D LeaveBtn;
+    Texture2D MonaL;
+
     void LoadTitle(){
         titleBG = LoadTexture("../res/textures/BGPlace.png");
         startBtn = LoadTexture("../res/textures/startBtn.png");
@@ -38,5 +44,12 @@ namespace Assets{
         rope = LoadTexture("../res/textures/rope.png");
         MainBGM = LoadMusicStream("../res/music/MainMusic.ogg");
 
+        FightBtn = LoadTexture("../res/textures/FightBtn.png");
+        ItemBtn = LoadTexture("../res/textures/ItemBtn.png");
+        LeaveBtn = LoadTexture("../res/textures/LeaveBtn.png");;
+
+        MonaL = LoadTexture("../res/paintings/MonaTest2.png");
     }
+
+
 }

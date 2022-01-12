@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_STARRYBATTLE_H
+#define MUSEUMGAME_STARRYBATTLE_H
+
+
+class StarryBattle {
+
+};
+
+
+#endif //MUSEUMGAME_STARRYBATTLE_H

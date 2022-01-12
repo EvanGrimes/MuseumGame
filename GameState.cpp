@@ -13,7 +13,7 @@ void GameState::tick() {
     }
 
     UpdatePlayer(&player, deltaTime);
-    //PaintingPress();
+    PaintingPress();
 
     camera.target.x = player.position.x;
     camera.target.y = player.position.y;
@@ -25,7 +25,7 @@ void GameState::tick() {
 
 void GameState::render() {
     ClearBackground(BACKGROUND);
-    //map.DrawMap();
+    map.DrawMap();
     DrawRectangleRec(playerRect, BLUE);
     //DrawTexture(Assets::playerTemp, (int) player.position.x, (int) player.position.y, WHITE);
 }

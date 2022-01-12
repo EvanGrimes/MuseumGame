@@ -38,6 +38,7 @@ void Game::loop() {
 
                     //HideCursor();
 
+                    SetMusicVolume(Assets::MainBGM, 0.1f);
                     PlayMusicStream(Assets::MainBGM);
                     gameInit++;
                 }
@@ -53,6 +54,9 @@ void Game::loop() {
                 case 'M':
                     if(!MonaObj.IsBossDead){
                         MonaObj.tick();
+                    }
+                    if(MonaObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'S':

@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_FARMMANBATTLE_H
+#define MUSEUMGAME_FARMMANBATTLE_H
+
+
+class FarmManBattle {
+
+};
+
+
+#endif //MUSEUMGAME_FARMMANBATTLE_H

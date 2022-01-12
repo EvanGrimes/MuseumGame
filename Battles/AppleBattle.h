@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_APPLEBATTLE_H
+#define MUSEUMGAME_APPLEBATTLE_H
+
+
+class AppleBattle {
+
+};
+
+
+#endif //MUSEUMGAME_APPLEBATTLE_H

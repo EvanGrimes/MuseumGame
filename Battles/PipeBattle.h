@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_PIPEBATTLE_H
+#define MUSEUMGAME_PIPEBATTLE_H
+
+
+class PipeBattle {
+
+};
+
+
+#endif //MUSEUMGAME_PIPEBATTLE_H

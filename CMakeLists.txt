@@ -12,6 +12,6 @@ project(MuseumGame)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(MuseumGame Launcher.cpp Game.cpp Game.h TitleScreen.cpp TitleScreen.h Assets.cpp Assets.h GameState.cpp GameState.h Map.h Map.cpp MapReader.cpp MapReader.h BattleManager.cpp BattleManager.h Battles/MonaBattle.cpp Battles/MonaBattle.h)
+add_executable(MuseumGame Launcher.cpp Game.cpp Game.h TitleScreen.cpp TitleScreen.h Assets.cpp Assets.h GameState.cpp GameState.h Map.h Map.cpp MapReader.cpp MapReader.h BattleManager.cpp BattleManager.h Battles/MonaBattle.cpp Battles/MonaBattle.h Battles/StarryBattle.cpp Battles/StarryBattle.h Battles/ScreamBattle.cpp Battles/ScreamBattle.h Battles/PipeBattle.cpp Battles/PipeBattle.h Battles/AGothicBattle.cpp Battles/AGothicBattle.h Battles/EarGirlBattle.cpp Battles/EarGirlBattle.h Battles/WaveBattle.cpp Battles/WaveBattle.h Battles/AppleBattle.cpp Battles/AppleBattle.h Battles/GeorgeBattle.cpp Battles/GeorgeBattle.h Battles/FarmManBattle.cpp Battles/FarmManBattle.h)
 
 target_link_libraries(MuseumGame PRIVATE raylib winmm)

@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_AGOTHICBATTLE_H
+#define MUSEUMGAME_AGOTHICBATTLE_H
+
+
+class AGothicBattle {
+
+};
+
+
+#endif //MUSEUMGAME_AGOTHICBATTLE_H

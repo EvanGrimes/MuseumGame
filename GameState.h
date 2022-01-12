@@ -75,7 +75,7 @@ public:
                     return true;
                 }
             }
-            DrawRectangleRec(map.mapReader.collision[count], RED);
+            //DrawRectangleRec(map.mapReader.collision[count], RED);
         }
         return false;
     }

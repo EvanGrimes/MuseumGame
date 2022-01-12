@@ -1,0 +1,10 @@
+#ifndef MUSEUMGAME_WAVEBATTLE_H
+#define MUSEUMGAME_WAVEBATTLE_H
+
+
+class WaveBattle {
+
+};
+
+
+#endif //MUSEUMGAME_WAVEBATTLE_H

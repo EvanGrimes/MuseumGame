@@ -43,5 +43,50 @@
   "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
   "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\MonaBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\MonaBattle.cpp\"",
   "file": "E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\StarryBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\StarryBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/StarryBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\ScreamBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\ScreamBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/ScreamBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\PipeBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\PipeBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/PipeBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\AGothicBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\AGothicBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/AGothicBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\EarGirlBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\EarGirlBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\WaveBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\WaveBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/WaveBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\AppleBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\AppleBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/AppleBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\GeorgeBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\GeorgeBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\FarmManBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\FarmManBattle.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/FarmManBattle.cpp"
 }
 ]

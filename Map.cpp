@@ -4,8 +4,8 @@ Map::Map(){
     mapReader.readMapData();
     sourceRec.x = 0;
     sourceRec.y = 0;
-    sourceRec.width = destRect.width = 14;
-    sourceRec.height = destRect.height = 14;
+    sourceRec.width = destRect.width = 16;
+    sourceRec.height = destRect.height = 16;
     destRect.x = destRect.y = 0;
 }
 
@@ -16,7 +16,6 @@ void Map::DrawMap() {
             destRect.x = (float)y * 16;
             destRect.y = (float)x * 16;
             switch (mapReader.mapTileData[x * 66 + y]) {
-
                 case '0':
                     DrawTextureRec(Assets::floor, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
