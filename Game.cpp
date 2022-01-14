@@ -19,11 +19,10 @@ void Game::loop() {
 
             //if(IntroCount >= 1560){
                 if(gameInit == 0){
+                    Assets::LoadGame();
 
                     gameState.IntroFrames = 0;
                     gameStart = 1;
-
-                    Assets::LoadGame();
 
                     gameState.camera = { {0, 0}, {0, 0}, 0.0f, 0 };
                     gameState.camera.target = (Vector2){ gameState.player.position.x + 20, gameState.player.position.y + 20 };
@@ -35,22 +34,20 @@ void Game::loop() {
                     gameState.startPlayer();
 
                     printf("Game assets inited\n");
-
-                    //HideCursor();
-
                     SetMusicVolume(Assets::MainBGM, 0.1f);
                     PlayMusicStream(Assets::MainBGM);
                     gameInit++;
                 }
-
+                //}
                 BeginMode2D(gameState.camera);
                 gameState.tick();
                 EndMode2D();
-            //}
         }
 
         if(Assets::gameState == "battle"){
-            switch(battleManager.BattlePicker(Assets::BattleNum)){
+            SetMusicVolume(Assets::BattleMusic, 0.1f);
+            PlayMusicStream(Assets::BattleMusic);
+            switch(BattleManager::BattlePicker(Assets::BattleNum)){
                 case 'M':
                     if(!MonaObj.IsBossDead){
                         MonaObj.tick();
@@ -60,48 +57,74 @@ void Game::loop() {
                     }
                     break;
                 case 'S':
-                    if(!MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!starryBattleObj.IsBossDead){
+                        starryBattleObj.tick();
+                    }
+                    if(starryBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 's':
-                    if(!MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!screamBattleObj.IsBossDead){
+                        screamBattleObj.tick();
+                    }
+                    if(screamBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'p':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!pipeBattleObj.IsBossDead){
+                        pipeBattleObj.tick();
+                    }
+                    if(pipeBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'f':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!aGothicBattleObj.IsBossDead){
+                        aGothicBattleObj.tick();
+                    }
+                    if(aGothicBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'G':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!earGirlBattleObj.IsBossDead){
+                        earGirlBattleObj.tick();
                     }
-                    break;
+                    if(earGirlBattleObj.IsBossDead){
+                        Assets::gameState = "game";
+                    }
                 case 'w':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!waveBattleObj.IsBossDead){
+                        waveBattleObj.tick();
+                    }
+                    if(waveBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'a':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!appleBattleObj.IsBossDead){
+                        appleBattleObj.tick();
+                    }
+                    if(appleBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'g':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!georgeBattleObj.IsBossDead){
+                        georgeBattleObj.tick();
+                    }
+                    if(georgeBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 case 'h':
-                    if(MonaObj.IsBossDead){
-                        MonaObj.tick();
+                    if(!farmManBattleObj.IsBossDead){
+                        farmManBattleObj.tick();
+                    }
+                    if(farmManBattleObj.IsBossDead){
+                        Assets::gameState = "game";
                     }
                     break;
                 default:

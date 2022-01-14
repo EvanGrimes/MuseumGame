@@ -23,11 +23,14 @@ namespace Assets {
     extern Texture2D rope;
     extern Texture2D painting;
     extern Music MainBGM;
+    extern Music BattleMusic;
 
     extern Texture2D FightBtn;
     extern Texture2D ItemBtn;
     extern Texture2D LeaveBtn;
+
     extern Texture2D MonaL;
+    extern Texture2D AGothic;
 
 
     void LoadTitle();

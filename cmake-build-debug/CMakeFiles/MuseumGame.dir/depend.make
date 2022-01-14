@@ -9,13 +9,50 @@ CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj: ../BattleManager.cpp
 CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj: ../BattleManager.h
 CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj: ../Battles/MonaBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Assets.h
+CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: ../Battles/EarGirlBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: ../Battles/EarGirlBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: ../Battles/FarmManBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: ../Battles/FarmManBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: ../Battles/GeorgeBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: ../Battles/GeorgeBattle.h
+
 CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj: ../Battles/MonaBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj: ../Battles/MonaBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: ../Battles/PipeBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: ../Battles/PipeBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: ../Battles/ScreamBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: ../Battles/ScreamBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: ../Battles/StarryBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: ../Battles/StarryBattle.h
+
+CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Battles/WaveBattle.cpp
+CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Battles/WaveBattle.h
+
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../BattleManager.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/AGothicBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/AppleBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/EarGirlBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/FarmManBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/GeorgeBattle.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/MonaBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/PipeBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/ScreamBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/StarryBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/WaveBattle.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Game.cpp
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Game.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../GameState.h
@@ -31,7 +68,16 @@ CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../MapReader.h
 
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../BattleManager.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/AGothicBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/AppleBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/EarGirlBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/FarmManBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/GeorgeBattle.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/MonaBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/PipeBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/ScreamBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/StarryBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/WaveBattle.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Game.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../GameState.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Launcher.cpp

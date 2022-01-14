@@ -5,7 +5,7 @@
 
 class BattleManager {
 public:
-    char BattlePicker(int PaintingType);
+    static char BattlePicker(int PaintingType);
 };
 
 

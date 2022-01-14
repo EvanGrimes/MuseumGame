@@ -24,7 +24,10 @@ namespace Assets{
     Texture2D FightBtn;
     Texture2D ItemBtn;
     Texture2D LeaveBtn;
+    Music BattleMusic;
+
     Texture2D MonaL;
+    Texture2D AGothic;
 
     void LoadTitle(){
         titleBG = LoadTexture("../res/textures/BGPlace.png");
@@ -44,11 +47,14 @@ namespace Assets{
         rope = LoadTexture("../res/textures/rope.png");
         MainBGM = LoadMusicStream("../res/music/MainMusic.ogg");
 
+        BattleMusic = LoadMusicStream("../res/music/BattleMusic.ogg");
+
         FightBtn = LoadTexture("../res/textures/FightBtn.png");
         ItemBtn = LoadTexture("../res/textures/ItemBtn.png");
         LeaveBtn = LoadTexture("../res/textures/LeaveBtn.png");;
 
-        MonaL = LoadTexture("../res/paintings/MonaTest2.png");
+        MonaL = LoadTexture("../res/paintings/MonaLisa.png");
+        AGothic = LoadTexture("../res/paintings/AGothic.png");
     }
 
 
