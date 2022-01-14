@@ -34,6 +34,8 @@ void MonaBattle::tick() {
         }
     }
 
+    UpdateMusicStream(Assets::BattleMusic);
+
     render();
 }
 
@@ -120,6 +122,7 @@ void MonaBattle::tickLeave() {
     }
     if (LeaveBtnAction) {
         std::cout << "COWARD!\n" << std::endl;
+        StopMusicStream(Assets::BattleMusic);
         Assets::gameState = "game";
     }
 }
