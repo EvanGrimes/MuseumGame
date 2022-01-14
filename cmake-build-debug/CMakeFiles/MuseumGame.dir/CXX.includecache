@@ -12,25 +12,33 @@ raylib.h
 iostream
 -
 
-E:/C++ Projects/MuseumGame/BattleManager.cpp
-BattleManager.h
-E:/C++ Projects/MuseumGame/BattleManager.h
-
 E:/C++ Projects/MuseumGame/BattleManager.h
 Battles/MonaBattle.h
 E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
+
+E:/C++ Projects/MuseumGame/Battles/AGothicBattle.cpp
+AGothicBattle.h
+E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h
 
 E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/AppleBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/FarmManBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
 ../Assets.h
@@ -39,12 +47,20 @@ random
 -
 
 E:/C++ Projects/MuseumGame/Battles/PipeBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/ScreamBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/StarryBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Battles/WaveBattle.h
+../Assets.h
+E:/C++ Projects/MuseumGame/Assets.h
 
 E:/C++ Projects/MuseumGame/Game.cpp
 Game.h
@@ -89,14 +105,6 @@ Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 Map.h
 E:/C++ Projects/MuseumGame/Map.h
-
-E:/C++ Projects/MuseumGame/Launcher.cpp
-raylib.h
--
-Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-Game.h
-E:/C++ Projects/MuseumGame/Game.h
 
 E:/C++ Projects/MuseumGame/Map.h
 Assets.h

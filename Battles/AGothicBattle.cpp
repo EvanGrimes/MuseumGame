@@ -21,19 +21,6 @@ void AGothicBattle::tick() {
         BullshitCritCount = 0;
     }
 
-    if(IsKeyPressed(KEY_L)){
-        temp = true;
-        if(frameCounter <= 20){
-            FightMsg = 1;
-        }
-        if(frameCounter <= 40 && frameCounter > 20){
-            FightMsg = 2;
-        }
-        if(frameCounter <= 60 && frameCounter > 40){
-            FightMsg = 3;
-        }
-    }
-
     UpdateMusicStream(Assets::BattleMusic);
 
     render();
@@ -59,7 +46,7 @@ void AGothicBattle::render() {
     DrawRectangleRec(PlayerHealthBack, RED);
     DrawRectangleRec(PlayerCurrHealth, GREEN);
 
-    DrawText( "47 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
+    DrawText( "63 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
 
     if(temp){
         tempCount++;
@@ -92,17 +79,42 @@ void AGothicBattle::tickFight() {
     }
     if (FightBtnAction) {
         std::cout << "FIGHT!\n" << std::endl;
+
+        //Boss taking Damage
         if(BullshitCritCount == 240){
             CurrHealth.width = 0;
         }
         else{
-            CurrHealth.width -= rand() % 18 + 18;
+            CurrHealth.width -= rand() % 21 + 10;
         }
         if(CurrHealth.width <= 0){
-            printf("leave");
+            printf("boss killed\n");
             IsBossDead = true;
         }
-        PlayerCurrHealth.width -= rand() % 18 + 10;
+
+        //Battle message
+        temp = true;
+        if(frameCounter <= 20){
+            FightMsg = 1;
+        }
+        if(frameCounter <= 40 && frameCounter > 20){
+            FightMsg = 2;
+        }
+        if(frameCounter <= 60 && frameCounter > 40){
+            FightMsg = 3;
+        }
+
+        //Player taking damage
+        if(CurrHealth.width <= CurrHealth.width/2){
+            PlayerCurrHealth.width -= (rand() % 24 + 15) * 1.05;
+        }
+        else{
+            PlayerCurrHealth.width -= rand() % 19 + 12;
+        }
+
+        if(PlayerCurrHealth.width <= 0){
+            IsPlayerDead = true;
+        }
     }
 }
 

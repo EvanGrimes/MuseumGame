@@ -23,6 +23,9 @@ class Game {
 public:
     void loop();
 
+    void DrawTextBox(const char* Message);
+    double textFrame;
+
     int gameStart = 0;
     int gameInit = 0;
 

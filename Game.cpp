@@ -53,10 +53,36 @@ void Game::loop() {
                         MonaObj.tick();
                     }
                     if(MonaObj.IsBossDead){
-                        Assets::gameState = "game";
+                        DrawTextBox("You have defeated the Mona Lisa and have won the game\n Congratulations!");
+                        if(IsKeyPressed(KEY_L)){
+                           textFrame = 0;
+                           Assets::gameState = "title";
+                           MonaObj.IsBossDead = false;
+                            MonaObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            MonaObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                           break;
+                        }
+                        else{
+                            DrawTextBox("You have defeated the Mona Lisa and have won the game\n Congratulations!");
+                        }
+                    }
+                    if(MonaObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            MonaObj.IsPlayerDead = false;
+                            MonaObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            MonaObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
                     }
                     break;
-                case 'S':
+                /*case 'S':
                     if(!starryBattleObj.IsBossDead){
                         starryBattleObj.tick();
                     }
@@ -79,16 +105,39 @@ void Game::loop() {
                     if(pipeBattleObj.IsBossDead){
                         Assets::gameState = "game";
                     }
-                    break;
+                    break;*/
                 case 'f':
                     if(!aGothicBattleObj.IsBossDead){
                         aGothicBattleObj.tick();
                     }
                     if(aGothicBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                        DrawTextBox("You have defeated the American Gothic Farmers!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have defeated the American Gothic Farmers!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
+                    }
+                    if(aGothicBattleObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            aGothicBattleObj.IsPlayerDead = false;
+                            aGothicBattleObj.CurrHealth.width = aGothicBattleObj.HeathBack.width;
+                            aGothicBattleObj.PlayerCurrHealth.width = aGothicBattleObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
                     }
                     break;
-                case 'G':
+                /*case 'G':
                     if(!earGirlBattleObj.IsBossDead){
                         earGirlBattleObj.tick();
                     }
@@ -126,7 +175,7 @@ void Game::loop() {
                     if(farmManBattleObj.IsBossDead){
                         Assets::gameState = "game";
                     }
-                    break;
+                    break;*/
                 default:
                     printf("ERROR: NO MATCHING BATTLE. CLOSING GAME");
                     Assets::gameState = "exit";
@@ -140,4 +189,11 @@ void Game::loop() {
 
         EndDrawing();
     }
+}
+
+void Game::DrawTextBox(const char *Message) {
+        DrawRectangle(0, 450, 1000, 150, WHITE);
+        DrawRectangle(10, 460, 980, 130, BLACK);
+        DrawText(TextSubtext(Message, 0, (int) textFrame/10 ), 15, 470, 20, WHITE);
+        textFrame += 2.3;
 }

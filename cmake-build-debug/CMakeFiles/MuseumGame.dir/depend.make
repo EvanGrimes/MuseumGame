@@ -13,15 +13,19 @@ CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: ../Battles/EarGirlBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: ../Battles/EarGirlBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: ../Battles/FarmManBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: ../Battles/FarmManBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: ../Battles/GeorgeBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: ../Battles/GeorgeBattle.h
 
@@ -29,15 +33,19 @@ CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj: ../Battles/MonaBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj: ../Battles/MonaBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: ../Battles/PipeBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: ../Battles/PipeBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: ../Battles/ScreamBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: ../Battles/ScreamBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: ../Battles/StarryBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: ../Battles/StarryBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Battles/WaveBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Battles/WaveBattle.h
 

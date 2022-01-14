@@ -27,7 +27,15 @@ namespace Assets{
     Music BattleMusic;
 
     Texture2D MonaL;
+    Texture2D StarryN;
+    Texture2D Scream;
+    Texture2D Pipe;
     Texture2D AGothic;
+    Texture2D EarGirl;
+    Texture2D Wave;
+    Texture2D AppleMan;
+    Texture2D GeorgeW;
+    Texture2D FarmMan;
 
     void LoadTitle(){
         titleBG = LoadTexture("../res/textures/BGPlace.png");
@@ -54,8 +62,18 @@ namespace Assets{
         LeaveBtn = LoadTexture("../res/textures/LeaveBtn.png");;
 
         MonaL = LoadTexture("../res/paintings/MonaLisa.png");
+        StarryN = LoadTexture("../res/paintings/StarryNight.png");
+        Scream = LoadTexture("../res/paintings/Scream.png");
+        Pipe = LoadTexture("../res/paintings/Pipe.png");
         AGothic = LoadTexture("../res/paintings/AGothic.png");
+        EarGirl = LoadTexture("../res/paintings/EarringGirl.png");
+        Wave = LoadTexture("../res/paintings/Wave.png");
+        AppleMan = LoadTexture("../res/paintings/AppleMan.png");
+        GeorgeW = LoadTexture("../res/paintings/George.png");
+        FarmMan = LoadTexture("../res/paintings/FarmMan.png");
     }
+
+
 
 
 }

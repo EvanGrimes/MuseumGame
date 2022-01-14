@@ -21,19 +21,6 @@ void MonaBattle::tick() {
         BullshitCritCount = 0;
     }
 
-    if(IsKeyPressed(KEY_L)){
-        temp = true;
-        if(frameCounter <= 20){
-            FightMsg = 1;
-        }
-        if(frameCounter <= 40 && frameCounter > 20){
-            FightMsg = 2;
-        }
-        if(frameCounter <= 60 && frameCounter > 40){
-            FightMsg = 3;
-        }
-    }
-
     UpdateMusicStream(Assets::BattleMusic);
 
     render();
@@ -59,10 +46,13 @@ void MonaBattle::render() {
     DrawRectangleRec(PlayerHealthBack, RED);
     DrawRectangleRec(PlayerCurrHealth, GREEN);
 
-    DrawText( "47 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
+    DrawText( "70 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
 
     if(temp){
         tempCount++;
+        FightBtn.x = 10000;
+        ItemBtn.x = 10000;
+        LeaveBtn.x = 10000;
         printf("L PRESSED\n");
         printf("%i", FightMsg);
         if(FightMsg == 1){
@@ -76,7 +66,18 @@ void MonaBattle::render() {
         }
         if(tempCount >= 10){
             if(IsKeyPressed(KEY_L)){
-                printf("L PRESS AGAIN \n");
+                FightBtn.x = 20;
+                ItemBtn.x = 370;
+                LeaveBtn.x = 720;
+                textFrame = 0;
+                tempCount = 0;
+                FightMsg = 0;
+                temp = false;
+            }
+            if(IsKeyPressed(MOUSE_LEFT_BUTTON)){
+                FightBtn.x = 20;
+                ItemBtn.x = 370;
+                LeaveBtn.x = 720;
                 textFrame = 0;
                 tempCount = 0;
                 FightMsg = 0;
@@ -94,16 +95,42 @@ void MonaBattle::tickFight() {
     }
     if (FightBtnAction) {
         std::cout << "FIGHT!\n" << std::endl;
+
+        //Boss taking Damage
         if(BullshitCritCount == 240){
             CurrHealth.width = 0;
         }
         else{
-                CurrHealth.width -= rand() % 25 + 18;
+                CurrHealth.width -= rand() % 15 + 5;
         }
         if(CurrHealth.width <= 0){
+            printf("boss killed");
             IsBossDead = true;
         }
-        PlayerCurrHealth.width -= rand() % 25 + 10;
+
+        //Battle message
+        temp = true;
+        if(frameCounter <= 20){
+            FightMsg = 1;
+        }
+        if(frameCounter <= 40 && frameCounter > 20){
+            FightMsg = 2;
+        }
+        if(frameCounter <= 60 && frameCounter > 40){
+            FightMsg = 3;
+        }
+
+        //Player taking damage
+        if(CurrHealth.width <= CurrHealth.width/2){
+            PlayerCurrHealth.width -= (rand() % 14 + 6) * 1.05;
+        }
+        else{
+            PlayerCurrHealth.width -= rand() % 14 + 6;
+        }
+
+        if(PlayerCurrHealth.width <= 0){
+            IsPlayerDead = true;
+        }
     }
 }
 

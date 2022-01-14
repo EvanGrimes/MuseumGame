@@ -30,11 +30,20 @@ namespace Assets {
     extern Texture2D LeaveBtn;
 
     extern Texture2D MonaL;
+    extern Texture2D StarryN;
+    extern Texture2D Scream;
+    extern Texture2D Pipe;
     extern Texture2D AGothic;
+    extern Texture2D EarGirl;
+    extern Texture2D Wave;
+    extern Texture2D AppleMan;
+    extern Texture2D GeorgeW;
+    extern Texture2D FarmMan;
 
 
     void LoadTitle();
     void LoadGame();
+
 }
 
 
