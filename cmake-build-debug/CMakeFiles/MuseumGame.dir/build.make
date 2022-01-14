@@ -193,123 +193,6 @@ CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.s"
 	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\MonaBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\MonaBattle.cpp.s
 
-CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj: ../Battles/StarryBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\StarryBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\StarryBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\StarryBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\StarryBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\StarryBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\StarryBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj: ../Battles/ScreamBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\ScreamBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\ScreamBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\ScreamBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\ScreamBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\ScreamBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\ScreamBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj: ../Battles/PipeBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\PipeBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\PipeBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\PipeBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\PipeBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\PipeBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\PipeBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\AGothicBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\AGothicBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\AGothicBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\AGothicBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\AGothicBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\AGothicBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj: ../Battles/EarGirlBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\EarGirlBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\EarGirlBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\EarGirlBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\EarGirlBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\EarGirlBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\EarGirlBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Battles/WaveBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\WaveBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\WaveBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\WaveBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\WaveBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\WaveBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\WaveBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\AppleBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\AppleBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\AppleBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\AppleBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\AppleBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\AppleBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj: ../Battles/GeorgeBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\GeorgeBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\GeorgeBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\GeorgeBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\GeorgeBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\GeorgeBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\GeorgeBattle.cpp.s
-
-CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: CMakeFiles/MuseumGame.dir/flags.make
-CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj: ../Battles/FarmManBattle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MuseumGame.dir\Battles\FarmManBattle.cpp.obj -c "E:\C++ Projects\MuseumGame\Battles\FarmManBattle.cpp"
-
-CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\MuseumGame\Battles\FarmManBattle.cpp" > CMakeFiles\MuseumGame.dir\Battles\FarmManBattle.cpp.i
-
-CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\MuseumGame\Battles\FarmManBattle.cpp" -o CMakeFiles\MuseumGame.dir\Battles\FarmManBattle.cpp.s
-
 # Object files for target MuseumGame
 MuseumGame_OBJECTS = \
 "CMakeFiles/MuseumGame.dir/Launcher.cpp.obj" \
@@ -320,16 +203,7 @@ MuseumGame_OBJECTS = \
 "CMakeFiles/MuseumGame.dir/Map.cpp.obj" \
 "CMakeFiles/MuseumGame.dir/MapReader.cpp.obj" \
 "CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj" \
-"CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj"
+"CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj"
 
 # External object files for target MuseumGame
 MuseumGame_EXTERNAL_OBJECTS =
@@ -343,20 +217,11 @@ MuseumGame.exe: CMakeFiles/MuseumGame.dir/Map.cpp.obj
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/MapReader.cpp.obj
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/MonaBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/StarryBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/ScreamBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/PipeBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/GeorgeBattle.cpp.obj
-MuseumGame.exe: CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/build.make
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/linklibs.rsp
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/objects1.rsp
 MuseumGame.exe: CMakeFiles/MuseumGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable MuseumGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\C++ Projects\MuseumGame\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable MuseumGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MuseumGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -92,64 +92,10 @@
 		<Unit filename="E:/C++ Projects/MuseumGame/BattleManager.h">
 			<Option target="MuseumGame"/>
 		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AGothicBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AppleBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AppleBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/FarmManBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/FarmManBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/Battles/MonaBattle.cpp">
 			<Option target="MuseumGame"/>
 		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/Battles/MonaBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/PipeBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/PipeBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/ScreamBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/ScreamBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/StarryBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/StarryBattle.h">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/WaveBattle.cpp">
-			<Option target="MuseumGame"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/MuseumGame/Battles/WaveBattle.h">
 			<Option target="MuseumGame"/>
 		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/Game.cpp">
