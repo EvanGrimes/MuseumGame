@@ -1,3 +1,13 @@
+/* Command for web-dev
+ * em++ -o WebBuild/game.html Assets.cpp BattleManager.cpp Game.cpp GameState.cpp Map.cpp
+ * MapReader.cpp TitleScreen.cpp Battles/MonaBattle.cpp Battles/AGothicBattle.cpp -Os -Wall
+ * ./libraylib.a -I. -I C:/raylib/raylib/src/raylib.h -L. -LC:/raylib/raylib/src/libraylib.a
+ * --preload-file res --shell-file shell.html -s ASYNCIFY -s USE_GLFW=3 -DPLATFORM_WEB
+*/
+
+
+
+
 #include "Game.h"
 
 void Game::loop() {
@@ -82,30 +92,102 @@ void Game::loop() {
                         }
                     }
                     break;
-                /*case 'S':
+                case 'S':
                     if(!starryBattleObj.IsBossDead){
                         starryBattleObj.tick();
                     }
-                    if(starryBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(starryBattleObj.IsBossDead) {
+                        DrawTextBox(
+                                "You have defeated the Starry Night!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox(
+                                    "You have defeated the Starry Night!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
                     }
+                        if(starryBattleObj.IsPlayerDead){
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                            if(IsKeyPressed(KEY_L)){
+                                textFrame = 0;
+                                Assets::gameState = "game";
+                                starryBattleObj.IsPlayerDead = false;
+                                starryBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                                starryBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                                StopMusicStream(Assets::BattleMusic);
+                                break;
+                            }
+                            else{
+                                DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                            }
+                        }
                     break;
                 case 's':
                     if(!screamBattleObj.IsBossDead){
                         screamBattleObj.tick();
                     }
-                    if(screamBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(screamBattleObj.IsBossDead) {
+                        DrawTextBox(
+                                "You have defeated the Random Screaming Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox(
+                                    "You have defeated the Random Screaming!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
                     }
+                        if(screamBattleObj.IsPlayerDead){
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                            if(IsKeyPressed(KEY_L)){
+                                textFrame = 0;
+                                Assets::gameState = "game";
+                                screamBattleObj.IsPlayerDead = false;
+                                screamBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                                screamBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                                StopMusicStream(Assets::BattleMusic);
+                                break;
+                            }
+                            else{
+                                DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                            }
+                        }
                     break;
                 case 'p':
                     if(!pipeBattleObj.IsBossDead){
                         pipeBattleObj.tick();
                     }
-                    if(pipeBattleObj.IsBossDead){
-                        Assets::gameState = "game";
-                    }
-                    break;*/
+                        if(pipeBattleObj.IsBossDead) {
+                            DrawTextBox(
+                                    "You have defeated the Pipe(?)!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                            if (IsKeyPressed(KEY_L)) {
+                                textFrame = 0;
+                                Assets::gameState = "game";
+                                break;
+                            } else {
+                                DrawTextBox(
+                                        "You have defeated the Pipe(?)!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                            }
+                        }
+                            if(pipeBattleObj.IsPlayerDead){
+                                DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                                if(IsKeyPressed(KEY_L)){
+                                    textFrame = 0;
+                                    Assets::gameState = "game";
+                                    pipeBattleObj.IsPlayerDead = false;
+                                    pipeBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                                    pipeBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                                    StopMusicStream(Assets::BattleMusic);
+                                    break;
+                                }
+                                else{
+                                    DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                                }
+                            }
+                    break;
                 case 'f':
                     if(!aGothicBattleObj.IsBossDead){
                         aGothicBattleObj.tick();
@@ -137,45 +219,163 @@ void Game::loop() {
                         }
                     }
                     break;
-                /*case 'G':
+                case 'G':
                     if(!earGirlBattleObj.IsBossDead){
                         earGirlBattleObj.tick();
                     }
-                    if(earGirlBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(earGirlBattleObj.IsBossDead) {
+                        DrawTextBox("You have defeated the Girl With A Pearl Earring!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox("You have defeated the Girl With A Pearl Earring!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
+                    }
+                    if(earGirlBattleObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            earGirlBattleObj.IsPlayerDead = false;
+                            earGirlBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            earGirlBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
                     }
                 case 'w':
                     if(!waveBattleObj.IsBossDead){
                         waveBattleObj.tick();
                     }
-                    if(waveBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(waveBattleObj.IsBossDead) {
+                        DrawTextBox(
+                                "You have defeated the Great Wave Off Kanagawa!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox(
+                                    "You have defeated the Great Wave Off Kanagawa!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
+                    }
+                    if(waveBattleObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            waveBattleObj.IsPlayerDead = false;
+                            waveBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            waveBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
                     }
                     break;
                 case 'a':
                     if(!appleBattleObj.IsBossDead){
                         appleBattleObj.tick();
                     }
-                    if(appleBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(appleBattleObj.IsBossDead) {
+                        DrawTextBox(
+                                "You have defeated the Son Of Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox(
+                                    "You have defeated the Son Of Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
+                    }
+                    if(appleBattleObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            appleBattleObj.IsPlayerDead = false;
+                            appleBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            appleBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
                     }
                     break;
                 case 'g':
                     if(!georgeBattleObj.IsBossDead){
                         georgeBattleObj.tick();
                     }
-                    if(georgeBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(georgeBattleObj.IsBossDead) {
+                        DrawTextBox(
+                                "You have defeated George Washington!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox(
+                                    "You have defeated George Washington!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
+                    }
+                    if(georgeBattleObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            georgeBattleObj.IsPlayerDead = false;
+                            georgeBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            georgeBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
                     }
                     break;
                 case 'h':
                     if(!farmManBattleObj.IsBossDead){
                         farmManBattleObj.tick();
                     }
-                    if(farmManBattleObj.IsBossDead){
-                        Assets::gameState = "game";
+                    if(farmManBattleObj.IsBossDead) {
+                        DrawTextBox(
+                                "You have defeated the Farm Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        if (IsKeyPressed(KEY_L)) {
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            break;
+                        } else {
+                            DrawTextBox(
+                                    "You have defeated the Farm Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
+                        }
                     }
-                    break;*/
+                    if(farmManBattleObj.IsPlayerDead){
+                        DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        if(IsKeyPressed(KEY_L)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                            farmManBattleObj.IsPlayerDead = false;
+                            farmManBattleObj.CurrHealth.width = MonaObj.HeathBack.width;
+                            farmManBattleObj.PlayerCurrHealth.width = MonaObj.HeathBack.width;
+                            StopMusicStream(Assets::BattleMusic);
+                            break;
+                        }
+                        else{
+                            DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
+                        }
+                    }
+                    break;
                 default:
                     printf("ERROR: NO MATCHING BATTLE. CLOSING GAME");
                     Assets::gameState = "exit";
@@ -191,7 +391,7 @@ void Game::loop() {
     }
 }
 
-void Game::DrawTextBox(const char *Message) {
+void Game::DrawTextBox(const char *Message){
         DrawRectangle(0, 450, 1000, 150, WHITE);
         DrawRectangle(10, 460, 980, 130, BLACK);
         DrawText(TextSubtext(Message, 0, (int) textFrame/10 ), 15, 470, 20, WHITE);

@@ -20,6 +20,7 @@ public:
     bool temp = false;
 
     bool IsBossDead = false;
+    bool IsPlayerDead;
 
     Rectangle FightBtn = {20,475,257, 97 };
     Rectangle ItemBtn = {370,475,257, 97 };

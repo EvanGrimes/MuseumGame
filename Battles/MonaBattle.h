@@ -31,6 +31,8 @@ public:
     Rectangle HeathBack = {370, 420, 235, 16};
     Rectangle CurrHealth = HeathBack;
 
+    bool BossDamage = false;
+
     Rectangle PlayerHealthBack = {370, 455, 235, 16};
     Rectangle PlayerCurrHealth = PlayerHealthBack;
 

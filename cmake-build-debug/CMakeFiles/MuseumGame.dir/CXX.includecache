@@ -12,123 +12,51 @@ raylib.h
 iostream
 -
 
-E:/C++ Projects/MuseumGame/BattleManager.h
-Battles/MonaBattle.h
-E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
-
-E:/C++ Projects/MuseumGame/Battles/AGothicBattle.cpp
-AGothicBattle.h
-E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h
-
-E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h
-../Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-
-E:/C++ Projects/MuseumGame/Battles/AppleBattle.h
-../Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
+E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.cpp
+EarGirlBattle.h
+E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.h
 
 E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 
+E:/C++ Projects/MuseumGame/Battles/FarmManBattle.cpp
+FarmManBattle.h
+E:/C++ Projects/MuseumGame/Battles/FarmManBattle.h
+
 E:/C++ Projects/MuseumGame/Battles/FarmManBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
+
+E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.cpp
+GeorgeBattle.h
+E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.h
 
 E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 
-E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
-../Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-random
--
+E:/C++ Projects/MuseumGame/Battles/PipeBattle.cpp
+PipeBattle.h
+E:/C++ Projects/MuseumGame/Battles/PipeBattle.h
 
 E:/C++ Projects/MuseumGame/Battles/PipeBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 
+E:/C++ Projects/MuseumGame/Battles/ScreamBattle.cpp
+ScreamBattle.h
+E:/C++ Projects/MuseumGame/Battles/ScreamBattle.h
+
 E:/C++ Projects/MuseumGame/Battles/ScreamBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 
+E:/C++ Projects/MuseumGame/Battles/StarryBattle.cpp
+StarryBattle.h
+E:/C++ Projects/MuseumGame/Battles/StarryBattle.h
+
 E:/C++ Projects/MuseumGame/Battles/StarryBattle.h
 ../Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-
-E:/C++ Projects/MuseumGame/Battles/WaveBattle.h
-../Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-
-E:/C++ Projects/MuseumGame/Game.cpp
-Game.h
-E:/C++ Projects/MuseumGame/Game.h
-
-E:/C++ Projects/MuseumGame/Game.h
-raylib.h
--
-Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-BattleManager.h
-E:/C++ Projects/MuseumGame/BattleManager.h
-TitleScreen.h
-E:/C++ Projects/MuseumGame/TitleScreen.h
-GameState.h
-E:/C++ Projects/MuseumGame/GameState.h
-Battles/MonaBattle.h
-E:/C++ Projects/MuseumGame/Battles/MonaBattle.h
-Battles/StarryBattle.h
-E:/C++ Projects/MuseumGame/Battles/StarryBattle.h
-Battles/ScreamBattle.h
-E:/C++ Projects/MuseumGame/Battles/ScreamBattle.h
-Battles/PipeBattle.h
-E:/C++ Projects/MuseumGame/Battles/PipeBattle.h
-Battles/AGothicBattle.h
-E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h
-Battles/EarGirlBattle.h
-E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.h
-Battles/WaveBattle.h
-E:/C++ Projects/MuseumGame/Battles/WaveBattle.h
-Battles/AppleBattle.h
-E:/C++ Projects/MuseumGame/Battles/AppleBattle.h
-Battles/GeorgeBattle.h
-E:/C++ Projects/MuseumGame/Battles/GeorgeBattle.h
-Battles/FarmManBattle.h
-E:/C++ Projects/MuseumGame/Battles/FarmManBattle.h
-
-E:/C++ Projects/MuseumGame/GameState.h
-raylib.h
--
-Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-Map.h
-E:/C++ Projects/MuseumGame/Map.h
-
-E:/C++ Projects/MuseumGame/Map.h
-Assets.h
-E:/C++ Projects/MuseumGame/Assets.h
-fstream
--
-raylib.h
--
-string
--
-sstream
--
-MapReader.h
-E:/C++ Projects/MuseumGame/MapReader.h
-
-E:/C++ Projects/MuseumGame/MapReader.h
-raylib.h
--
-iostream
--
-
-E:/C++ Projects/MuseumGame/TitleScreen.h
-raylib.h
--
-Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 

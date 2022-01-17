@@ -4,7 +4,7 @@
 
 
 void MapReader::readMapData() {
-    char *buffer = LoadFileText("../res/map_2.mp");
+    char *buffer = LoadFileText("../res/maps/map_2.mp");
     char *p = buffer;
     int x = 0;
     while (*p != '\0') {

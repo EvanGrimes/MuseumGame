@@ -5,9 +5,9 @@ char BattleManager::BattlePicker(int PaintingType) {
         case 1:
             return 'M';
         case 2:
-            return 'M';
+            return 'S';
         case 3:
-            return 'M';
+            return 's';
         case 4:
             return 'p';
         case 5:

@@ -28,7 +28,13 @@ void MonaBattle::tick() {
 
 void MonaBattle::render() {
     ClearBackground(BLACK);
-    DrawTexture(Assets::MonaL, 370, 50, WHITE);
+    if(BossDamage){
+        DrawTexture(Assets::MonaL, 370, 50, RED);
+    }
+    else{
+        DrawTexture(Assets::MonaL, 370, 50, WHITE);
+    }
+
 
     DrawRectangleRec(FightBtn, RED);
     DrawTexture(Assets::FightBtn, (int) FightBtn.x, (int) FightBtn.y, WHITE);
@@ -49,6 +55,7 @@ void MonaBattle::render() {
     DrawText( "70 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
 
     if(temp){
+        BossDamage = true;
         tempCount++;
         FightBtn.x = 10000;
         ItemBtn.x = 10000;
@@ -66,6 +73,7 @@ void MonaBattle::render() {
         }
         if(tempCount >= 10){
             if(IsKeyPressed(KEY_L)){
+                BossDamage = false;
                 FightBtn.x = 20;
                 ItemBtn.x = 370;
                 LeaveBtn.x = 720;
@@ -74,7 +82,7 @@ void MonaBattle::render() {
                 FightMsg = 0;
                 temp = false;
             }
-            if(IsKeyPressed(MOUSE_LEFT_BUTTON)){
+            if(IsKeyPressed(MOUSE_RIGHT_BUTTON)){
                 FightBtn.x = 20;
                 ItemBtn.x = 370;
                 LeaveBtn.x = 720;
@@ -93,10 +101,14 @@ void MonaBattle::tickFight() {
     if (CheckCollisionPointRec(mousePoint, FightBtn)) {
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) FightBtnAction = true;
     }
+
+    if(IsKeyPressed(KEY_F) && textFrame == 0) FightBtnAction = true;
+
     if (FightBtnAction) {
         std::cout << "FIGHT!\n" << std::endl;
 
         //Boss taking Damage
+
         if(BullshitCritCount == 240){
             CurrHealth.width = 0;
         }
@@ -105,11 +117,13 @@ void MonaBattle::tickFight() {
         }
         if(CurrHealth.width <= 0){
             printf("boss killed");
+            IsPlayerDead = false;
             IsBossDead = true;
         }
 
         //Battle message
         temp = true;
+
         if(frameCounter <= 20){
             FightMsg = 1;
         }
@@ -128,7 +142,7 @@ void MonaBattle::tickFight() {
             PlayerCurrHealth.width -= rand() % 14 + 6;
         }
 
-        if(PlayerCurrHealth.width <= 0){
+        if(PlayerCurrHealth.width <= 0 && !IsBossDead){
             IsPlayerDead = true;
         }
     }

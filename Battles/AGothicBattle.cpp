@@ -46,7 +46,7 @@ void AGothicBattle::render() {
     DrawRectangleRec(PlayerHealthBack, RED);
     DrawRectangleRec(PlayerCurrHealth, GREEN);
 
-    DrawText( "63 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
+    DrawText( "52 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
 
     if(temp){
         tempCount++;
@@ -77,6 +77,9 @@ void AGothicBattle::tickFight() {
     if (CheckCollisionPointRec(mousePoint, FightBtn)) {
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) FightBtnAction = true;
     }
+
+    if(IsKeyPressed(KEY_F) && textFrame == 0) FightBtnAction = true;
+
     if (FightBtnAction) {
         std::cout << "FIGHT!\n" << std::endl;
 
@@ -85,10 +88,11 @@ void AGothicBattle::tickFight() {
             CurrHealth.width = 0;
         }
         else{
-            CurrHealth.width -= rand() % 21 + 10;
+            CurrHealth.width -= rand() % 32 + 23;
         }
         if(CurrHealth.width <= 0){
             printf("boss killed\n");
+            IsPlayerDead = false;
             IsBossDead = true;
         }
 
@@ -106,13 +110,13 @@ void AGothicBattle::tickFight() {
 
         //Player taking damage
         if(CurrHealth.width <= CurrHealth.width/2){
-            PlayerCurrHealth.width -= (rand() % 24 + 15) * 1.05;
+            PlayerCurrHealth.width -= (rand() % 30 + 23) * 1.05;
         }
         else{
-            PlayerCurrHealth.width -= rand() % 19 + 12;
+            PlayerCurrHealth.width -= rand() % 27 + 20;
         }
 
-        if(PlayerCurrHealth.width <= 0){
+        if(PlayerCurrHealth.width <= 0 && !IsBossDead){
             IsPlayerDead = true;
         }
     }

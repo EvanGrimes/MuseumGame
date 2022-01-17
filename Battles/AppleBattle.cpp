@@ -1,7 +1,29 @@
 #include "AppleBattle.h"
 
 void AppleBattle::tick() {
+    frameCounter++;
+    if(frameCounter >= 60){
+        frameCounter = 0;
+    }
 
+    mousePoint = GetMousePosition();
+
+    FightBtnAction = false;
+    ItemBtnAction = false;
+    LeaveBtnAction = false;
+
+    tickFight();
+    tickLeave();
+    tickItem();
+
+    BullshitCritCount++;
+    if(BullshitCritCount <= 1002){
+        BullshitCritCount = 0;
+    }
+
+    UpdateMusicStream(Assets::BattleMusic);
+
+    render();
 }
 
 void AppleBattle::render() {
@@ -24,7 +46,7 @@ void AppleBattle::render() {
     DrawRectangleRec(PlayerHealthBack, RED);
     DrawRectangleRec(PlayerCurrHealth, GREEN);
 
-    DrawText( "47 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
+    DrawText( "29 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
 
     if(temp){
         tempCount++;
@@ -54,7 +76,52 @@ void AppleBattle::render() {
 }
 
 void AppleBattle::tickFight() {
+    if (CheckCollisionPointRec(mousePoint, FightBtn)) {
+        if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) FightBtnAction = true;
+    }
 
+    if(IsKeyPressed(KEY_F) && textFrame == 0) FightBtnAction = true;
+
+    if (FightBtnAction) {
+        std::cout << "FIGHT!\n" << std::endl;
+
+        //Boss taking Damage
+        if(BullshitCritCount == 240){
+            CurrHealth.width = 0;
+        }
+        else{
+            CurrHealth.width -= rand() % 52 + 44;
+        }
+        if(CurrHealth.width <= 0){
+            printf("boss killed\n");
+            IsPlayerDead = false;
+            IsBossDead = true;
+        }
+
+        //Battle message
+        temp = true;
+        if(frameCounter <= 20){
+            FightMsg = 1;
+        }
+        if(frameCounter <= 40 && frameCounter > 20){
+            FightMsg = 2;
+        }
+        if(frameCounter <= 60 && frameCounter > 40){
+            FightMsg = 3;
+        }
+
+        //Player taking damage
+        if(CurrHealth.width <= CurrHealth.width/2){
+            PlayerCurrHealth.width -= (rand() % 58 + 39) * 1.05;
+        }
+        else{
+            PlayerCurrHealth.width -= rand() % 45 + 38;
+        }
+
+        if(PlayerCurrHealth.width <= 0 && !IsBossDead){
+            IsPlayerDead = true;
+        }
+    }
 }
 
 void AppleBattle::tickItem() {
@@ -62,7 +129,14 @@ void AppleBattle::tickItem() {
 }
 
 void AppleBattle::tickLeave() {
-
+    if (CheckCollisionPointRec(mousePoint, LeaveBtn)) {
+        if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) LeaveBtnAction = true;
+    }
+    if (LeaveBtnAction) {
+        std::cout << "COWARD!\n" << std::endl;
+        StopMusicStream(Assets::BattleMusic);
+        Assets::gameState = "game";
+    }
 }
 
 void AppleBattle::DrawTextBox(const char *Message) {
