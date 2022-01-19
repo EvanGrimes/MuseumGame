@@ -1,5 +1,7 @@
 #include "StarryBattle.h"
 
+//TODO: Add a platformer section
+
 void StarryBattle::tick() {
     frameCounter++;
     if(frameCounter >= 60){
@@ -28,7 +30,7 @@ void StarryBattle::tick() {
 
 void StarryBattle::render() {
     ClearBackground(BLACK);
-    DrawTexture(Assets::Wave, 370, 50, WHITE);
+    DrawTexture(Assets::StarryN, 370, 50, WHITE);
 
     DrawRectangleRec(FightBtn, RED);
     DrawTexture(Assets::FightBtn, (int) FightBtn.x, (int) FightBtn.y, WHITE);
@@ -49,6 +51,9 @@ void StarryBattle::render() {
     DrawText( "63 HP", (int) PlayerHealthBack.x, (int) PlayerHealthBack.y, 16, WHITE);
 
     if(temp){
+        FightBtn.x = 10000;
+        ItemBtn.x = 10000;
+        LeaveBtn.x = 10000;
         tempCount++;
         printf("L PRESSED\n");
         printf("%i", FightMsg);
@@ -63,6 +68,9 @@ void StarryBattle::render() {
         }
         if(tempCount >= 10){
             if(IsKeyPressed(KEY_L)){
+                FightBtn.x = 20;
+                ItemBtn.x = 370;
+                LeaveBtn.x = 720;
                 printf("L PRESS AGAIN \n");
                 textFrame = 0;
                 tempCount = 0;

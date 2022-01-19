@@ -4,6 +4,15 @@
 #define PLAYER_HOR_SPD 150.0f
 #define BACKGROUND  (Color){ 42, 42, 47, 255 }
 
+#define XBOX360_LEGACY_NAME_ID  "Xbox Controller"
+#if defined(PLATFORM_RPI)
+#define XBOX360_NAME_ID     "Microsoft X-Box 360 pad"
+    #define PS3_NAME_ID         "PLAYSTATION(R)3 Controller"
+#else
+#define XBOX360_NAME_ID     "Xbox 360 Controller"
+#define PS3_NAME_ID         "PLAYSTATION(R)4 Controller"
+#endif
+
 #include <raylib.h>
 
 #include "Assets.h"
@@ -136,6 +145,64 @@ public:
             }
         }
 
+        if(IsGamepadAvailable(0)){
+            if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_UP)){
+                if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_DOWN)) {
+                    printf("pain");
+                    if(!checkCollisionFuture()) {
+                        playerP->position.y -= PLAYER_HOR_SPD * delta;
+                        lastAnim = "up";
+                    }
+                    if(checkCollisionFuture()) {
+                        playerP->position.y += PLAYER_HOR_SPD * delta;
+
+                        lastAnim = "up";
+                    }
+
+                }
+            }
+            if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_DOWN)) {
+                if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_UP)) {
+                    if(!checkCollisionFuture()) {
+                        playerP->position.y += PLAYER_HOR_SPD * delta;
+                        lastAnim = "down";
+                    }
+                    if(checkCollisionFuture()) {
+                        playerP->position.y -= PLAYER_HOR_SPD * delta;
+                        lastAnim = "down";
+                    }
+                }
+            }
+            if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_LEFT)) {
+
+                if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_RIGHT)) {
+
+                    if(!checkCollisionFuture()) {
+                        playerP->position.x -= PLAYER_HOR_SPD * delta;
+                        lastAnim = "left";
+                    }
+                    if(checkCollisionFuture()) {
+                        playerP->position.x += PLAYER_HOR_SPD * delta;
+
+                        lastAnim = "left";
+                    }
+                }
+            }
+            if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_RIGHT)) {
+                if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_LEFT)) {
+                    if(!checkCollisionFuture()) {
+                        playerP->position.x += PLAYER_HOR_SPD * delta;
+                        lastAnim = "right";
+                    }
+                    if(checkCollisionFuture()) {
+                        playerP->position.x -= PLAYER_HOR_SPD * delta;
+                        lastAnim = "right";
+                    }
+                }
+            }
+        }
+
+
     }
 
     void PaintingPress(){
@@ -144,6 +211,12 @@ public:
                                                 playerRect.height})) {
                 if(CheckForPainting()){
                     if(IsKeyPressed(KEY_E)){
+                        printf("Painting Pressed\n");
+                        std::cout << map.mapReader.PaintingType[count] << "\n";
+                        Assets::BattleNum = map.mapReader.PaintingType[count];
+                        Assets::gameState = "battle";
+                    }
+                    if(IsGamepadButtonDown(0, GAMEPAD_BUTTON_RIGHT_FACE_DOWN)){
                         printf("Painting Pressed\n");
                         std::cout << map.mapReader.PaintingType[count] << "\n";
                         Assets::BattleNum = map.mapReader.PaintingType[count];

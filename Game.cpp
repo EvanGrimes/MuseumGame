@@ -1,8 +1,5 @@
 /* Command for web-dev
- * em++ -o WebBuild/game.html Assets.cpp BattleManager.cpp Game.cpp GameState.cpp Map.cpp
- * MapReader.cpp TitleScreen.cpp Battles/MonaBattle.cpp Battles/AGothicBattle.cpp -Os -Wall
- * ./libraylib.a -I. -I C:/raylib/raylib/src/raylib.h -L. -LC:/raylib/raylib/src/libraylib.a
- * --preload-file res --shell-file shell.html -s ASYNCIFY -s USE_GLFW=3 -DPLATFORM_WEB
+  em++ -o WebBuild/game.html Assets.cpp BattleManager.cpp Game.cpp GameState.cpp Map.cpp MapReader.cpp TitleScreen.cpp Battles/MonaBattle.cpp Battles/AGothicBattle.cpp -Os -Wall ./libraylib.a -I. -I C:/raylib/raylib/src/raylib.h -L. -LC:/raylib/raylib/src/libraylib.a --preload-file res --shell-file shell.html -s ASYNCIFY -s USE_GLFW=3 -DPLATFORM_WEB
 */
 
 
@@ -233,6 +230,7 @@ void Game::loop() {
                             DrawTextBox("You have defeated the Girl With A Pearl Earring!\n Congratulations! However, your fight is not yet over. Continue onwards!");
                         }
                     }
+
                     if(earGirlBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
                         if(IsKeyPressed(KEY_L)){
@@ -248,6 +246,7 @@ void Game::loop() {
                             DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
                         }
                     }
+                    break;
                 case 'w':
                     if(!waveBattleObj.IsBossDead){
                         waveBattleObj.tick();
@@ -374,6 +373,7 @@ void Game::loop() {
                         else{
                             DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
                         }
+
                     }
                     break;
                 default:

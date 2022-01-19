@@ -42,6 +42,8 @@ public:
 
     Vector2 mousePoint = { 0.0f, 0.0f };
 
+    void TickPlatformer();
+
     void tickFight();
     void tickItem();
     void tickLeave();

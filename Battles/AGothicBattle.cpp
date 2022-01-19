@@ -1,5 +1,9 @@
 #include "AGothicBattle.h"
 
+//TODO: Hollow knight?????
+
+
+
 void AGothicBattle::tick() {
     frameCounter++;
     if(frameCounter >= 60){
@@ -50,6 +54,9 @@ void AGothicBattle::render() {
 
     if(temp){
         tempCount++;
+        FightBtn.x = 10000;
+        ItemBtn.x = 10000;
+        LeaveBtn.x = 10000;
         printf("L PRESSED\n");
         printf("%i", FightMsg);
         if(FightMsg == 1){
@@ -63,6 +70,9 @@ void AGothicBattle::render() {
         }
         if(tempCount >= 10){
             if(IsKeyPressed(KEY_L)){
+                FightBtn.x = 20;
+                ItemBtn.x = 370;
+                LeaveBtn.x = 720;
                 printf("L PRESS AGAIN \n");
                 textFrame = 0;
                 tempCount = 0;
