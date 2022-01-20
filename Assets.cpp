@@ -31,6 +31,7 @@ namespace Assets{
     Texture2D Scream;
     Texture2D Pipe;
     Texture2D AGothic;
+    Texture2D AGothicBG;
     Texture2D EarGirl;
     Texture2D Wave;
     Texture2D AppleMan;
@@ -66,6 +67,9 @@ namespace Assets{
         Scream = LoadTexture("../res/paintings/Scream.png");
         Pipe = LoadTexture("../res/paintings/Pipe.png");
         AGothic = LoadTexture("../res/paintings/AGothic.png");
+
+        AGothicBG = LoadTexture("../res/textures/AGothicBG.png");
+
         EarGirl = LoadTexture("../res/paintings/EarringGirl.png");
         Wave = LoadTexture("../res/paintings/Wave.png");
         AppleMan = LoadTexture("../res/paintings/AppleMan.png");

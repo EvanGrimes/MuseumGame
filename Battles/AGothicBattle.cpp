@@ -9,7 +9,6 @@ void AGothicBattle::tick() {
     if(frameCounter >= 60){
         frameCounter = 0;
     }
-
     mousePoint = GetMousePosition();
 
     FightBtnAction = false;
@@ -26,6 +25,7 @@ void AGothicBattle::tick() {
     }
 
     UpdateMusicStream(Assets::BattleMusic);
+
 
     render();
 }

@@ -223,6 +223,33 @@ Battles/AGothicBattle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.s
 .PHONY : Battles/AGothicBattle.cpp.s
 
+Battles/AGothicKnight.obj: Battles/AGothicKnight.cpp.obj
+
+.PHONY : Battles/AGothicKnight.obj
+
+# target to build an object file
+Battles/AGothicKnight.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.obj
+.PHONY : Battles/AGothicKnight.cpp.obj
+
+Battles/AGothicKnight.i: Battles/AGothicKnight.cpp.i
+
+.PHONY : Battles/AGothicKnight.i
+
+# target to preprocess a source file
+Battles/AGothicKnight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.i
+.PHONY : Battles/AGothicKnight.cpp.i
+
+Battles/AGothicKnight.s: Battles/AGothicKnight.cpp.s
+
+.PHONY : Battles/AGothicKnight.s
+
+# target to generate assembly for a file
+Battles/AGothicKnight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MuseumGame.dir\build.make CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.s
+.PHONY : Battles/AGothicKnight.cpp.s
+
 Battles/AppleBattle.obj: Battles/AppleBattle.cpp.obj
 
 .PHONY : Battles/AppleBattle.obj
@@ -646,6 +673,9 @@ help:
 	@echo ... Battles/AGothicBattle.obj
 	@echo ... Battles/AGothicBattle.i
 	@echo ... Battles/AGothicBattle.s
+	@echo ... Battles/AGothicKnight.obj
+	@echo ... Battles/AGothicKnight.i
+	@echo ... Battles/AGothicKnight.s
 	@echo ... Battles/AppleBattle.obj
 	@echo ... Battles/AppleBattle.i
 	@echo ... Battles/AppleBattle.s

@@ -12,6 +12,7 @@
 #include "Battles/ScreamBattle.h"
 #include "Battles/PipeBattle.h"
 #include "Battles/AGothicBattle.h"
+#include "Battles/AGothicKnight.h"
 #include "Battles/EarGirlBattle.h"
 #include "Battles/WaveBattle.h"
 #include "Battles/AppleBattle.h"
@@ -42,6 +43,7 @@ public:
     ScreamBattle screamBattleObj;
     PipeBattle pipeBattleObj;
     AGothicBattle aGothicBattleObj;
+    AGothicKnight aGothicKnight;
     EarGirlBattle earGirlBattleObj;
     WaveBattle waveBattleObj;
     AppleBattle appleBattleObj;

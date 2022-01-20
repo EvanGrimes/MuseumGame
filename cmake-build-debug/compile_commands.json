@@ -88,5 +88,10 @@
   "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
   "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\FarmManBattle.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\FarmManBattle.cpp\"",
   "file": "E:/C++ Projects/MuseumGame/Battles/FarmManBattle.cpp"
+},
+{
+  "directory": "E:/C++ Projects/MuseumGame/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe    -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -static-libgcc -static-libstdc++ -std=c++14 -o CMakeFiles\\MuseumGame.dir\\Battles\\AGothicKnight.cpp.obj -c \"E:\\C++ Projects\\MuseumGame\\Battles\\AGothicKnight.cpp\"",
+  "file": "E:/C++ Projects/MuseumGame/Battles/AGothicKnight.cpp"
 }
 ]

@@ -34,6 +34,7 @@ namespace Assets {
     extern Texture2D Scream;
     extern Texture2D Pipe;
     extern Texture2D AGothic;
+    extern Texture2D AGothicBG;
     extern Texture2D EarGirl;
     extern Texture2D Wave;
     extern Texture2D AppleMan;

@@ -54,6 +54,7 @@ void Game::loop() {
         if(Assets::gameState == "battle"){
             SetMusicVolume(Assets::BattleMusic, 0.1f);
             PlayMusicStream(Assets::BattleMusic);
+
             switch(BattleManager::BattlePicker(Assets::BattleNum)){
                 case 'M':
                     if(!MonaObj.IsBossDead){
@@ -186,7 +187,10 @@ void Game::loop() {
                             }
                     break;
                 case 'f':
-                    if(!aGothicBattleObj.IsBossDead){
+
+                    aGothicKnight.tick();
+
+                    /*if(!aGothicBattleObj.IsBossDead){
                         aGothicBattleObj.tick();
                     }
                     if(aGothicBattleObj.IsBossDead){
@@ -214,7 +218,7 @@ void Game::loop() {
                         else{
                             DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
                         }
-                    }
+                    }*/
                     break;
                 case 'G':
                     if(!earGirlBattleObj.IsBossDead){

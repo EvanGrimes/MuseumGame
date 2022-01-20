@@ -98,6 +98,12 @@
 		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AGothicBattle.h">
 			<Option target="MuseumGame"/>
 		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AGothicKnight.cpp">
+			<Option target="MuseumGame"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AGothicKnight.h">
+			<Option target="MuseumGame"/>
+		</Unit>
 		<Unit filename="E:/C++ Projects/MuseumGame/Battles/AppleBattle.cpp">
 			<Option target="MuseumGame"/>
 		</Unit>

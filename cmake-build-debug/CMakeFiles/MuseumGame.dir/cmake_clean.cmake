@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MuseumGame.dir/Assets.cpp.obj"
   "CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj"
   "CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj"
+  "CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.obj"
   "CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj"
   "CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj"
   "CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj"

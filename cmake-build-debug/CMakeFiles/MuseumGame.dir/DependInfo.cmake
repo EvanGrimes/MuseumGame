@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/C++ Projects/MuseumGame/Assets.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Assets.cpp.obj"
   "E:/C++ Projects/MuseumGame/BattleManager.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/BattleManager.cpp.obj"
   "E:/C++ Projects/MuseumGame/Battles/AGothicBattle.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj"
+  "E:/C++ Projects/MuseumGame/Battles/AGothicKnight.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.obj"
   "E:/C++ Projects/MuseumGame/Battles/AppleBattle.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj"
   "E:/C++ Projects/MuseumGame/Battles/EarGirlBattle.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Battles/EarGirlBattle.cpp.obj"
   "E:/C++ Projects/MuseumGame/Battles/FarmManBattle.cpp" "E:/C++ Projects/MuseumGame/cmake-build-debug/CMakeFiles/MuseumGame.dir/Battles/FarmManBattle.cpp.obj"
