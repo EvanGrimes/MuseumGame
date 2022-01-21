@@ -24,12 +24,18 @@ void AGothicKnight::tick() {
 
 
     if(IsKeyPressed(KEY_F) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
-        if(bulletCounter > 4){
+        if(bulletCounter >= 10){
             bulletCounter = 0;
         }
         bullets[bulletCounter].bulletRec = {player.position.x + playerRect.width, player.position.y + playerRect.height / 2, 20, 5};
         bulletCounter++;
     }
+    if((IsKeyPressed(KEY_Q) || IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)) && !grenadeInAir){
+        grenades.grenadeRec = {player.position.x + playerRect.width, player.position.y + 2, 10, 10};
+        grenadeInAir = true;
+    }
+
+
 
     BullshitCritCount++;
     if(BullshitCritCount <= 1002){
@@ -47,9 +53,31 @@ void AGothicKnight::render() {
    DrawTexture(Assets::AGothicBG, 0, 0, WHITE);
    DrawRectangleRec(MapCollision, GREEN);
 
-   for(int i = 0; i < 5; i++){
+   for(int i = 0; i < 10; i++){
        bullets[i].bulletRec.x += bullets[i].speed;
        bullets[i].Draw(bullets[i]);
+   }
+
+   if(grenadeInAir){
+       if(CheckCollisionRecs((Rectangle) {grenades.grenadeRec.x, grenades.grenadeRec.y + 5, grenades.grenadeRec.width, grenades.grenadeRec.height}, MapCollision)){
+           grenades.Explode(grenades);
+           grenades.airTime = 75;
+           grenadeInAir = false;
+       }
+       else{
+           grenades.Draw(grenades);
+           if(grenades.airTime >= 2){
+               grenades.grenadeRec.x++;
+               grenades.grenadeRec.y--;
+               grenades.airTime--;
+               std::cout << grenades.airTime << "\n";
+           }
+           else{
+               grenades.grenadeRec.x++;
+               grenades.grenadeRec.y += 1.4;
+           }
+
+       }
    }
 
 

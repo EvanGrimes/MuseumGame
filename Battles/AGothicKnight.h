@@ -1,7 +1,7 @@
 #ifndef MUSEUMGAME_AGOTHICKNIGHT_H
 #define MUSEUMGAME_AGOTHICKNIGHT_H
 
-#define PLAYER_HOR_SPD 200.0f
+#define SIDE_PLAYER_HOR_SPD 200.0f
 
 #include "../Assets.h"
 
@@ -11,12 +11,35 @@ typedef struct SidePlayer {
 
 typedef struct Bullet {
     Rectangle bulletRec = {0, 0, 0 ,0};
-    Vector2 position = {0, 0};
     float speed = 10;
-    void Draw(Bullet bullet){
+    void Draw(const Bullet& bullet){
         DrawRectangleRec(bullet.bulletRec, RED);
     }
 } Bullet;
+
+typedef struct Grenade {
+    Rectangle grenadeRec = {0, 0, 0 ,0};
+    int explosionTime = 20;
+    int airTime = 75;
+    int explodeTime = 50;
+    void Draw(const Grenade& grenade){
+        DrawRectangleRec(grenade.grenadeRec, BLACK);
+    }
+    void Explode(Grenade grenade){
+        if(explodeTime >= 1){
+            if(explosionTime >= 2){
+                DrawRectangleRec(grenade.grenadeRec, YELLOW);
+                explodeTime--;
+            }
+            else
+                explodeTime--;
+        }
+        else{
+            grenade.grenadeRec.x = 1002;
+        }
+
+    };
+} Grenade;
 
 
 
@@ -35,10 +58,12 @@ public:
     int FightMsg = 0;
     int tempCount = 0;
 
-    Bullet bullets[5];
+    Bullet bullets[19];
+    Grenade grenades;
 
-    int bulletCounter;
-    int tempBullets;
+    int bulletCounter = 0;
+    int grenadeCounter;
+    bool grenadeInAir;
 
     bool temp = false;
 
@@ -94,13 +119,13 @@ public:
 
         if (IsKeyDown(KEY_A)) {
             if(!IsKeyDown(KEY_D)) {
-                playerP->position.x -= PLAYER_HOR_SPD * delta;
+                playerP->position.x -= SIDE_PLAYER_HOR_SPD * delta;
                 lastAnim = "left";
             }
         }
         if (IsKeyDown(KEY_D)) {
             if(!IsKeyDown(KEY_A)) {
-                playerP->position.x += PLAYER_HOR_SPD * delta;
+                playerP->position.x += SIDE_PLAYER_HOR_SPD * delta;
                 lastAnim = "right";
             }
         }
@@ -130,18 +155,18 @@ public:
 
                 if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_RIGHT)) {
 
-                    playerP->position.x -= PLAYER_HOR_SPD * delta;
+                    playerP->position.x -= SIDE_PLAYER_HOR_SPD * delta;
                     lastAnim = "left";
-                    playerP->position.x += PLAYER_HOR_SPD * delta;
+                    playerP->position.x += SIDE_PLAYER_HOR_SPD * delta;
 
                     lastAnim = "left";
                 }
             }
             if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_RIGHT)) {
                 if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_LEFT)) {
-                    playerP->position.x += PLAYER_HOR_SPD * delta;
+                    playerP->position.x += SIDE_PLAYER_HOR_SPD * delta;
                     lastAnim = "right";
-                    playerP->position.x -= PLAYER_HOR_SPD * delta;
+                    playerP->position.x -= SIDE_PLAYER_HOR_SPD * delta;
                     lastAnim = "right";
                 }
             }

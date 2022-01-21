@@ -13,6 +13,10 @@ CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/AGothicBattle.cpp.obj: ../Battles/AGothicBattle.h
 
+CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.obj: ../Assets.h
+CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.obj: ../Battles/AGothicKnight.cpp
+CMakeFiles/MuseumGame.dir/Battles/AGothicKnight.cpp.obj: ../Battles/AGothicKnight.h
+
 CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.cpp
 CMakeFiles/MuseumGame.dir/Battles/AppleBattle.cpp.obj: ../Battles/AppleBattle.h
@@ -52,6 +56,7 @@ CMakeFiles/MuseumGame.dir/Battles/WaveBattle.cpp.obj: ../Battles/WaveBattle.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../BattleManager.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/AGothicBattle.h
+CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/AGothicKnight.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/AppleBattle.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/EarGirlBattle.h
 CMakeFiles/MuseumGame.dir/Game.cpp.obj: ../Battles/FarmManBattle.h
@@ -77,6 +82,7 @@ CMakeFiles/MuseumGame.dir/GameState.cpp.obj: ../MapReader.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Assets.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../BattleManager.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/AGothicBattle.h
+CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/AGothicKnight.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/AppleBattle.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/EarGirlBattle.h
 CMakeFiles/MuseumGame.dir/Launcher.cpp.obj: ../Battles/FarmManBattle.h
