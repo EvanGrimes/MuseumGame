@@ -54,15 +54,31 @@ void Game::loop() {
         if(Assets::gameState == "battle"){
             SetMusicVolume(Assets::BattleMusic, 0.1f);
             PlayMusicStream(Assets::BattleMusic);
+            if(appleBattleObj.IsBossDead && aGothicBattleObj.IsBossDead &&
+               starryBattleObj.IsBossDead && screamBattleObj.IsBossDead && pipeBattleObj.IsBossDead
+               && earGirlBattleObj.IsBossDead && waveBattleObj.IsBossDead && georgeBattleObj.IsBossDead &&
+               farmManBattleObj.IsBossDead){
+                AllBossesDead = true;
+            }
 
             switch(BattleManager::BattlePicker(Assets::BattleNum)){
+
                 case 'M':
+                    if(!AllBossesDead){
+                        DrawTextBox("You must defeat all bosses before you can fight the Mona Lisa!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
+
                     if(!MonaObj.IsBossDead){
                         MonaObj.tick();
                     }
                     if(MonaObj.IsBossDead){
                         DrawTextBox("You have defeated the Mona Lisa and have won the game\n Congratulations!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                            textFrame = 0;
                            Assets::gameState = "title";
                            MonaObj.IsBossDead = false;
@@ -76,7 +92,7 @@ void Game::loop() {
                     }
                     if(MonaObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             MonaObj.IsPlayerDead = false;
@@ -91,13 +107,21 @@ void Game::loop() {
                     }
                     break;
                 case 'S':
+                    if(!pipeBattleObj.IsBossDead || !aGothicBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat both the Gothic Farmers and the Pipe(?) to fight the Starry Night!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!starryBattleObj.IsBossDead){
                         starryBattleObj.tick();
                     }
                     if(starryBattleObj.IsBossDead) {
                         DrawTextBox(
                                 "You have defeated the Starry Night!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -108,7 +132,7 @@ void Game::loop() {
                     }
                         if(starryBattleObj.IsPlayerDead){
                             DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                            if(IsKeyPressed(KEY_L)){
+                            if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                                 textFrame = 0;
                                 Assets::gameState = "game";
                                 starryBattleObj.IsPlayerDead = false;
@@ -123,13 +147,21 @@ void Game::loop() {
                         }
                     break;
                 case 's':
+                    if(!pipeBattleObj.IsBossDead || !aGothicBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat both the Gothic Farmers and the Pipe(?) to fight the Random Screaming \nMan!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!screamBattleObj.IsBossDead){
                         screamBattleObj.tick();
                     }
                     if(screamBattleObj.IsBossDead) {
                         DrawTextBox(
                                 "You have defeated the Random Screaming Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -140,7 +172,7 @@ void Game::loop() {
                     }
                         if(screamBattleObj.IsPlayerDead){
                             DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                            if(IsKeyPressed(KEY_L)){
+                            if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                                 textFrame = 0;
                                 Assets::gameState = "game";
                                 screamBattleObj.IsPlayerDead = false;
@@ -155,13 +187,21 @@ void Game::loop() {
                         }
                     break;
                 case 'p':
+                    if(!waveBattleObj.IsBossDead || !earGirlBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat both the Girl With The Pearl Earrings and The Great Wave \nto fight the Pipe(?)!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!pipeBattleObj.IsBossDead){
                         pipeBattleObj.tick();
                     }
                         if(pipeBattleObj.IsBossDead) {
                             DrawTextBox(
                                     "You have defeated the Pipe(?)!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                            if (IsKeyPressed(KEY_L)) {
+                            if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
                                 textFrame = 0;
                                 Assets::gameState = "game";
                                 break;
@@ -172,7 +212,7 @@ void Game::loop() {
                         }
                             if(pipeBattleObj.IsPlayerDead){
                                 DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                                if(IsKeyPressed(KEY_L)){
+                                if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                                     textFrame = 0;
                                     Assets::gameState = "game";
                                     pipeBattleObj.IsPlayerDead = false;
@@ -188,14 +228,21 @@ void Game::loop() {
                     break;
                 case 'f':
 
-                    aGothicKnight.tick();
+                    if(!waveBattleObj.IsBossDead || !earGirlBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat both the Girl With The Pearl Earrings and The Great Wave \nto fight the Farmers!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
 
-                    /*if(!aGothicBattleObj.IsBossDead){
+                    if(!aGothicBattleObj.IsBossDead){
                         aGothicBattleObj.tick();
                     }
                     if(aGothicBattleObj.IsBossDead){
                         DrawTextBox("You have defeated the American Gothic Farmers!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -206,7 +253,7 @@ void Game::loop() {
                     }
                     if(aGothicBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             aGothicBattleObj.IsPlayerDead = false;
@@ -218,15 +265,23 @@ void Game::loop() {
                         else{
                             DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
                         }
-                    }*/
+                    }
                     break;
                 case 'G':
+                    if(!georgeBattleObj.IsBossDead || !appleBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat both the Son of Man and George Washington to fight the Girl With The\nPearl Earrings!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!earGirlBattleObj.IsBossDead){
                         earGirlBattleObj.tick();
                     }
                     if(earGirlBattleObj.IsBossDead) {
                         DrawTextBox("You have defeated the Girl With A Pearl Earring!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -237,7 +292,7 @@ void Game::loop() {
 
                     if(earGirlBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             earGirlBattleObj.IsPlayerDead = false;
@@ -252,13 +307,21 @@ void Game::loop() {
                     }
                     break;
                 case 'w':
+                    if(!georgeBattleObj.IsBossDead || !appleBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat both the Son of Man and George Washington to fight the Wave!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!waveBattleObj.IsBossDead){
                         waveBattleObj.tick();
                     }
                     if(waveBattleObj.IsBossDead) {
                         DrawTextBox(
                                 "You have defeated the Great Wave Off Kanagawa!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -269,7 +332,7 @@ void Game::loop() {
                     }
                     if(waveBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             waveBattleObj.IsPlayerDead = false;
@@ -284,13 +347,21 @@ void Game::loop() {
                     }
                     break;
                 case 'a':
+                    if(!farmManBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat the Farm Illusion to battle the Son Of Man!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!appleBattleObj.IsBossDead){
                         appleBattleObj.tick();
                     }
                     if(appleBattleObj.IsBossDead) {
                         DrawTextBox(
                                 "You have defeated the Son Of Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -301,7 +372,7 @@ void Game::loop() {
                     }
                     if(appleBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             appleBattleObj.IsPlayerDead = false;
@@ -316,13 +387,21 @@ void Game::loop() {
                     }
                     break;
                 case 'g':
+                    if(!farmManBattleObj.IsBossDead){
+                        DrawTextBox("You must defeat the Farm Illusion to battle George!");
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                            textFrame = 0;
+                            Assets::gameState = "game";
+                        }
+                        break;
+                    }
                     if(!georgeBattleObj.IsBossDead){
                         georgeBattleObj.tick();
                     }
                     if(georgeBattleObj.IsBossDead) {
                         DrawTextBox(
                                 "You have defeated George Washington!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -333,7 +412,7 @@ void Game::loop() {
                     }
                     if(georgeBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             georgeBattleObj.IsPlayerDead = false;
@@ -354,7 +433,7 @@ void Game::loop() {
                     if(farmManBattleObj.IsBossDead) {
                         DrawTextBox(
                                 "You have defeated the Farm Man!\n Congratulations! However, your fight is not yet over. Continue onwards!");
-                        if (IsKeyPressed(KEY_L)) {
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             break;
@@ -365,7 +444,7 @@ void Game::loop() {
                     }
                     if(farmManBattleObj.IsPlayerDead){
                         DrawTextBox("You have died whilst in battle. Do not give up!\n Try Again!");
-                        if(IsKeyPressed(KEY_L)){
+                        if((IsKeyPressed(KEY_L)) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                             textFrame = 0;
                             Assets::gameState = "game";
                             farmManBattleObj.IsPlayerDead = false;

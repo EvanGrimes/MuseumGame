@@ -12,7 +12,11 @@ namespace Assets{
     Texture2D settBtn;
     Texture2D exitBtn;
 
-    Texture2D playerTemp;
+    Texture2D playerUp[6];
+    Texture2D playerDown[6];
+    Texture2D playerLeft[6];
+    Texture2D playerRight[6];
+    Texture2D playerIdle[4];
     Texture2D pillar;
     Texture2D floor;
     Texture2D wall;
@@ -47,7 +51,39 @@ namespace Assets{
     }
 
     void LoadGame(){
-        playerTemp = LoadTexture("../res/sprites/playerTemp2.png");
+        playerUp[0] = LoadTexture("../res/sprites/walk/hero-walk-back/Up1.png");
+        playerUp[1] = LoadTexture("../res/sprites/walk/hero-walk-back/Up2.png");
+        playerUp[2] = LoadTexture("../res/sprites/walk/hero-walk-back/Up3.png");
+        playerUp[3] = LoadTexture("../res/sprites/walk/hero-walk-back/Up4.png");
+        playerUp[4] = LoadTexture("../res/sprites/walk/hero-walk-back/Up5.png");
+        playerUp[5] = LoadTexture("../res/sprites/walk/hero-walk-back/Up6.png");
+
+        playerDown[0] = LoadTexture("../res/sprites/walk/hero-walk-front/hero-walk-front-1.png");
+        playerDown[1] = LoadTexture("../res/sprites/walk/hero-walk-front/hero-walk-front-2.png");
+        playerDown[2] = LoadTexture("../res/sprites/walk/hero-walk-front/hero-walk-front-3.png");
+        playerDown[3] = LoadTexture("../res/sprites/walk/hero-walk-front/hero-walk-front-4.png");
+        playerDown[4] = LoadTexture("../res/sprites/walk/hero-walk-front/hero-walk-front-5.png");
+        playerDown[5] = LoadTexture("../res/sprites/walk/hero-walk-front/hero-walk-front-6.png");
+
+        playerRight[0] = LoadTexture("../res/sprites/walk/hero-walk-side/hero-walk-side-1.png");
+        playerRight[1] = LoadTexture("../res/sprites/walk/hero-walk-side/hero-walk-side-2.png");
+        playerRight[2] = LoadTexture("../res/sprites/walk/hero-walk-side/hero-walk-side-3.png");
+        playerRight[3] = LoadTexture("../res/sprites/walk/hero-walk-side/hero-walk-side-4.png");
+        playerRight[4] = LoadTexture("../res/sprites/walk/hero-walk-side/hero-walk-side-5.png");
+        playerRight[5] = LoadTexture("../res/sprites/walk/hero-walk-side/hero-walk-side-6.png");
+
+        playerLeft[0] = LoadTexture("../res/sprites/walk/left/1.png");
+        playerLeft[1] = LoadTexture("../res/sprites/walk/left/2.png");
+        playerLeft[2] = LoadTexture("../res/sprites/walk/left/3.png");
+        playerLeft[3] = LoadTexture("../res/sprites/walk/left/4.png");
+        playerLeft[4] = LoadTexture("../res/sprites/walk/left/5.png");
+        playerLeft[5] = LoadTexture("../res/sprites/walk/left/6.png");
+
+        playerIdle[0] = LoadTexture("../res/sprites/idle/hero-idle-back/hero-idle-back.png");
+        playerIdle[1] = LoadTexture("../res/sprites/idle/hero-idle-front/hero-idle-front.png");
+        playerIdle[2] = LoadTexture("../res/sprites/idle/hero-idle-side/hero-idle-side.png");
+        playerIdle[3] = LoadTexture("../res/sprites/idle/hero-idle-side/left.png");
+
         pillar = LoadTexture("../res/textures/pillar.png");
         floor = LoadTexture("../res/textures/floor.png");
         wall = LoadTexture("../res/textures/wall.png");

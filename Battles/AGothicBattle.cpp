@@ -69,7 +69,7 @@ void AGothicBattle::render() {
             DrawTextBox(FightMsg3);
         }
         if(tempCount >= 10){
-            if(IsKeyPressed(KEY_L)){
+            if(IsKeyPressed(KEY_L) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                 FightBtn.x = 20;
                 ItemBtn.x = 370;
                 LeaveBtn.x = 720;

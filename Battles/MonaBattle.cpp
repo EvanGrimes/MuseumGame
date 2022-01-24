@@ -72,17 +72,8 @@ void MonaBattle::render() {
             DrawTextBox(FightMsg3);
         }
         if(tempCount >= 10){
-            if(IsKeyPressed(KEY_L)){
+            if(IsKeyPressed(KEY_L) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                 BossDamage = false;
-                FightBtn.x = 20;
-                ItemBtn.x = 370;
-                LeaveBtn.x = 720;
-                textFrame = 0;
-                tempCount = 0;
-                FightMsg = 0;
-                temp = false;
-            }
-            if(IsKeyPressed(MOUSE_RIGHT_BUTTON)){
                 FightBtn.x = 20;
                 ItemBtn.x = 370;
                 LeaveBtn.x = 720;

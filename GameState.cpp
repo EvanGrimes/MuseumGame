@@ -26,6 +26,43 @@ void GameState::tick() {
 void GameState::render() {
     ClearBackground(BACKGROUND);
     map.DrawMap();
-    DrawRectangleRec(playerRect, BLUE);
+    //DrawRectangleRec(playerRect, BLUE);
+    DrawTexture(GetLastAnim(), (int)player.position.x - 10, (int)player.position.y - 10, WHITE);
     //DrawTexture(Assets::playerTemp, (int) player.position.x, (int) player.position.y, WHITE);
+}
+
+Texture2D GameState::GetLastAnim() const {
+    if(Moving) {
+        if (lastAnim == "up") {
+            return Assets::playerUp[currentFrame];
+        }
+        if (lastAnim == "down") {
+            return Assets::playerDown[currentFrame];
+        }
+        if (lastAnim == "left") {
+            return Assets::playerLeft[currentFrame];
+        }
+        if (lastAnim == "right") {
+            return Assets::playerRight[currentFrame];
+        }
+    }
+
+    else {
+        if (lastAnim == "up") {
+            return Assets::playerIdle[0];
+        }
+        if (lastAnim == "down") {
+            return Assets::playerIdle[1];
+        }
+        if (lastAnim == "left") {
+            return Assets::playerIdle[2];
+        }
+        if (lastAnim == "right") {
+            return Assets::playerIdle[3];
+        }
+        else{
+            return Assets::playerIdle[1];
+        }
+    }
+    return Assets::playerIdle[1];
 }

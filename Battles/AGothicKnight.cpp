@@ -21,6 +21,7 @@ void AGothicKnight::tick() {
    // tickItem();
 
     UpdatePlayer(&player, deltaTime);
+    UpdateEnemy(GothicGuy);
 
 
     if(IsKeyPressed(KEY_F) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
@@ -55,7 +56,7 @@ void AGothicKnight::render() {
 
    for(int i = 0; i < 10; i++){
        bullets[i].bulletRec.x += bullets[i].speed;
-       bullets[i].Draw(bullets[i]);
+       Bullet::Draw(bullets[i]);
    }
 
    if(grenadeInAir){
@@ -65,10 +66,10 @@ void AGothicKnight::render() {
            grenadeInAir = false;
        }
        else{
-           grenades.Draw(grenades);
+           Grenade::Draw(grenades);
            if(grenades.airTime >= 2){
                grenades.grenadeRec.x++;
-               grenades.grenadeRec.y--;
+               grenades.grenadeRec.y -= 2.578;
                grenades.airTime--;
                std::cout << grenades.airTime << "\n";
            }
@@ -82,13 +83,14 @@ void AGothicKnight::render() {
 
 
    DrawRectangleRec(playerRect, BLUE);
+   DrawRectangleRec(GothicGuy.BodyRec, YELLOW);
 }
 
 void AGothicKnight::tickFight() {
 
 }
 
-void AGothicKnight::tickItem() {
+/*void AGothicKnight::tickItem() {
     if (CheckCollisionPointRec(mousePoint, ItemBtn)) {
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) ItemBtnAction = true;
     }
@@ -106,7 +108,7 @@ void AGothicKnight::tickLeave() {
         StopMusicStream(Assets::BattleMusic);
         Assets::gameState = "game";
     }
-}
+}*/
 
 void AGothicKnight::DrawTextBox(const char *Message) {
     DrawRectangle(0, 450, 1000, 150, WHITE);

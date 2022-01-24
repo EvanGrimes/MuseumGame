@@ -50,7 +50,7 @@ public:
 
     Player player;
 
-    Rectangle playerRect = {  player.position.x , player.position.y + 20, 20, 20};
+    Rectangle playerRect = {  player.position.x , player.position.y + 20, 21, 20};
 
     void startPlayer() {
         player = {{0, 0}, 0};
@@ -60,6 +60,8 @@ public:
         player.speed = 0;
     }
     std::string lastAnim;
+    Texture2D GetLastAnim() const;
+    bool Moving = false;
 
     int count = 0;
 
@@ -91,15 +93,18 @@ public:
 
     void UpdatePlayer(Player *playerP, float delta)
     {
+        Moving = false;
+
         if (IsKeyDown(KEY_W)){
             if(!IsKeyDown(KEY_S)) {
                 if(!checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.y -= PLAYER_HOR_SPD * delta;
                     lastAnim = "up";
                 }
                 if(checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.y += PLAYER_HOR_SPD * delta;
-
                     lastAnim = "up";
                 }
 
@@ -108,10 +113,12 @@ public:
         if (IsKeyDown(KEY_S)) {
             if(!IsKeyDown(KEY_W)) {
                 if(!checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.y += PLAYER_HOR_SPD * delta;
                     lastAnim = "down";
                 }
                 if(checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.y -= PLAYER_HOR_SPD * delta;
                     lastAnim = "down";
                 }
@@ -122,12 +129,13 @@ public:
             if(!IsKeyDown(KEY_D)) {
 
                 if(!checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.x -= PLAYER_HOR_SPD * delta;
                     lastAnim = "left";
                 }
                 if(checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.x += PLAYER_HOR_SPD * delta;
-
                     lastAnim = "left";
                 }
             }
@@ -135,10 +143,12 @@ public:
         if (IsKeyDown(KEY_D)) {
             if(!IsKeyDown(KEY_A)) {
                 if(!checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.x += PLAYER_HOR_SPD * delta;
                     lastAnim = "right";
                 }
                 if(checkCollisionFuture()) {
+                    Moving = true;
                     playerP->position.x -= PLAYER_HOR_SPD * delta;
                     lastAnim = "right";
                 }
@@ -148,14 +158,14 @@ public:
         if(IsGamepadAvailable(0)){
             if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_UP)){
                 if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_DOWN)) {
-                    printf("pain");
                     if(!checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.y -= PLAYER_HOR_SPD * delta;
                         lastAnim = "up";
                     }
                     if(checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.y += PLAYER_HOR_SPD * delta;
-
                         lastAnim = "up";
                     }
 
@@ -164,10 +174,12 @@ public:
             if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_DOWN)) {
                 if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_UP)) {
                     if(!checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.y += PLAYER_HOR_SPD * delta;
                         lastAnim = "down";
                     }
                     if(checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.y -= PLAYER_HOR_SPD * delta;
                         lastAnim = "down";
                     }
@@ -178,12 +190,13 @@ public:
                 if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_RIGHT)) {
 
                     if(!checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.x -= PLAYER_HOR_SPD * delta;
                         lastAnim = "left";
                     }
                     if(checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.x += PLAYER_HOR_SPD * delta;
-
                         lastAnim = "left";
                     }
                 }
@@ -191,10 +204,12 @@ public:
             if (IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_RIGHT)) {
                 if(!IsGamepadButtonDown(0, GAMEPAD_BUTTON_LEFT_FACE_LEFT)) {
                     if(!checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.x += PLAYER_HOR_SPD * delta;
                         lastAnim = "right";
                     }
                     if(checkCollisionFuture()) {
+                        Moving = true;
                         playerP->position.x -= PLAYER_HOR_SPD * delta;
                         lastAnim = "right";
                     }

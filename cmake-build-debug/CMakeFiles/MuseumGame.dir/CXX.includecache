@@ -12,11 +12,11 @@ raylib.h
 iostream
 -
 
-E:/C++ Projects/MuseumGame/Battles/AGothicKnight.cpp
-AGothicKnight.h
-E:/C++ Projects/MuseumGame/Battles/AGothicKnight.h
+E:/C++ Projects/MuseumGame/Battles/PipeBattle.cpp
+PipeBattle.h
+E:/C++ Projects/MuseumGame/Battles/PipeBattle.h
 
-E:/C++ Projects/MuseumGame/Battles/AGothicKnight.h
+E:/C++ Projects/MuseumGame/Battles/PipeBattle.h
 ../Assets.h
 E:/C++ Projects/MuseumGame/Assets.h
 

@@ -28,6 +28,8 @@ public:
     Rectangle HeathBack = {370, 420, 235, 16};
     Rectangle CurrHealth = HeathBack;
 
+    Vector2 PaintingPOS = {370, 50};
+
     Rectangle PlayerHealthBack = {370, 455, 235, 16};
     Rectangle PlayerCurrHealth = PlayerHealthBack;
 

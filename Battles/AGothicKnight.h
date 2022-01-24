@@ -9,20 +9,26 @@ typedef struct SidePlayer {
     Vector2 position;
 } SidePlayer;
 
+typedef struct Enemy{
+    Rectangle BodyRec = {700, 460, 20, 20};
+} Enemy;
+
 typedef struct Bullet {
     Rectangle bulletRec = {0, 0, 0 ,0};
     float speed = 10;
-    void Draw(const Bullet& bullet){
+    static void Draw(const Bullet& bullet){
         DrawRectangleRec(bullet.bulletRec, RED);
     }
 } Bullet;
+
+
 
 typedef struct Grenade {
     Rectangle grenadeRec = {0, 0, 0 ,0};
     int explosionTime = 20;
     int airTime = 75;
     int explodeTime = 50;
-    void Draw(const Grenade& grenade){
+    static void Draw(Grenade grenade){
         DrawRectangleRec(grenade.grenadeRec, BLACK);
     }
     void Explode(Grenade grenade){
@@ -31,13 +37,8 @@ typedef struct Grenade {
                 DrawRectangleRec(grenade.grenadeRec, YELLOW);
                 explodeTime--;
             }
-            else
-                explodeTime--;
         }
-        else{
-            grenade.grenadeRec.x = 1002;
-        }
-
+        else grenade.grenadeRec.x = 1002;
     };
 } Grenade;
 
@@ -62,7 +63,6 @@ public:
     Grenade grenades;
 
     int bulletCounter = 0;
-    int grenadeCounter;
     bool grenadeInAir;
 
     bool temp = false;
@@ -73,15 +73,13 @@ public:
     float deltaTime;
     Rectangle MapCollision = {0, 500, 1000, 150};
     SidePlayer player = {{500, 460}};
+    Enemy GothicGuy = {{700, 460, 20, 20}};
     std::string lastAnim;
     Rectangle playerRect = {  player.position.x , player.position.y + 20, 20, 20};
 
     bool airBorne = false;
     int jumpHeight;
 
-    Rectangle FightBtn = {20,475,257, 97 };
-    Rectangle ItemBtn = {370,475,257, 97 };
-    Rectangle LeaveBtn = {720,475,257, 97 };
     Rectangle HeathBack = {370, 420, 235, 16};
     Rectangle CurrHealth = HeathBack;
 
@@ -100,9 +98,6 @@ public:
     Vector2 mousePoint = { 0.0f, 0.0f };
 
     void tickFight();
-    Rectangle bullet[5] = {{player.position.x + playerRect.width, player.position.y - playerRect.height / 2, 20, 5}};
-    void tickItem();
-    void tickLeave();
 
 
     void UpdatePlayer(SidePlayer *playerP, float delta)
@@ -173,6 +168,11 @@ public:
         }
 
 
+    }
+
+    void UpdateEnemy(Enemy enemy){
+
+        enemy.BodyRec.x -= 200;
     }
 };
 

@@ -49,6 +49,8 @@ public:
     AppleBattle appleBattleObj;
     GeorgeBattle georgeBattleObj;
     FarmManBattle farmManBattleObj;
+
+    bool AllBossesDead;
 };
 
 

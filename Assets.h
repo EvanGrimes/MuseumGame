@@ -17,7 +17,11 @@ namespace Assets {
     extern Texture2D settBtn;
     extern Texture2D exitBtn;
 
-    extern Texture2D playerTemp;
+    extern Texture2D playerUp[6];
+    extern Texture2D playerDown[6];
+    extern Texture2D playerLeft[6];
+    extern Texture2D playerRight[6];
+    extern Texture2D playerIdle[4];
     extern Texture2D pillar;
     extern Texture2D floor;
     extern Texture2D wall;

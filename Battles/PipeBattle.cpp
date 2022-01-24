@@ -28,7 +28,48 @@ void PipeBattle::tick() {
 
 void PipeBattle::render() {
     ClearBackground(BLACK);
-    DrawTexture(Assets::Pipe, 370, 50, WHITE);
+
+    if(PaintingPOS.x < 1000){
+        switch(rand() % 4){
+            case 0:
+                if(PaintingPOS.x > 1000){
+                    PaintingPOS.x -= 3;
+                }
+                else{
+                    PaintingPOS.x += 3;
+                }
+
+                break;
+            case 1:
+                if(PaintingPOS.y < 0){
+                    PaintingPOS.y += 4;
+                }
+                else{
+                    PaintingPOS.y -= 4;
+                }
+                break;
+            case 2:
+                if(PaintingPOS.x < 0 ){
+                    PaintingPOS.x += 4;
+                }
+                else{
+                    PaintingPOS.x -= 5;
+                }
+                break;
+            case 3:
+                if(PaintingPOS.y >= 600){
+                    PaintingPOS.y -= 4;
+                }
+                else{
+                    PaintingPOS.y += 4;
+                }
+
+                break;
+        }
+
+    }
+
+    DrawTexture(Assets::Pipe, (int) PaintingPOS.x, (int) PaintingPOS.y, WHITE);
 
     DrawRectangleRec(FightBtn, RED);
     DrawTexture(Assets::FightBtn, (int) FightBtn.x, (int) FightBtn.y, WHITE);
@@ -65,7 +106,7 @@ void PipeBattle::render() {
             DrawTextBox(FightMsg3);
         }
         if(tempCount >= 10){
-            if(IsKeyPressed(KEY_L)){
+            if(IsKeyPressed(KEY_L) || IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                 FightBtn.x = 20;
                 ItemBtn.x = 370;
                 LeaveBtn.x = 720;
