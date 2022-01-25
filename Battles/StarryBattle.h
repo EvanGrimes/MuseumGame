@@ -6,9 +6,9 @@
 class StarryBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You turn on a flashlight and contribute to light pollution";
+    const char FightMsg2[255] = "You turn on the gas stove and contribute to pollution";
+    const char FightMsg3[255] = "You wish for the sun to rise and hurt it's feelings";
 
     int BullshitCritCount = 0;
 

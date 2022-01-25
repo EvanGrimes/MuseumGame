@@ -6,9 +6,9 @@
 class AGothicBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You 'plow' the Old Man and his Wife";
+    const char FightMsg2[255] = "You say, 'American Gothic? More like American Not It!' and they they take Physcic Damage";
+    const char FightMsg3[255] = "You wish them a bad crop yeild this year.";
 
     int BullshitCritCount = 0;
 

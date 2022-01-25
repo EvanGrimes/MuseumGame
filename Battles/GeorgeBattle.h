@@ -2,12 +2,13 @@
 #define MUSEUMGAME_GEORGEBATTLE_H
 
 #include "../Assets.h"
+
 class GeorgeBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You tell him America is British land and he gets mad at you";
+    const char FightMsg2[255] = "You ask him which political party he's on and he goes on a rant about \nhow political parties are bad";
+    const char FightMsg3[255] = "You tell him that he didn't cut down a cherry tree and he gets mad at you";
 
     int BullshitCritCount = 0;
 

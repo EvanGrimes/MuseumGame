@@ -6,9 +6,9 @@
 class AppleBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You say you prefer oranges and a single tear rolls down his face";
+    const char FightMsg2[255] = "You tell him his suit has a wrinkle and you attack whilst he's distracted";
+    const char FightMsg3[255] = "You ask how he's the son of man yet has an apple for the face. \nThis makes him wonder how he was conceived";
 
     int BullshitCritCount = 0;
 

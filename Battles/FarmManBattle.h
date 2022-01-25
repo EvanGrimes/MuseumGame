@@ -6,9 +6,9 @@
 class FarmManBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You ask where his face begins and the farm ends and this makes him scared";
+    const char FightMsg2[255] = "You ask where the farm begins and his face ends and this makes him confused";;
+    const char FightMsg3[255] = "You ask if he's balding. While he looks for his hair, you attack him";
 
     int BullshitCritCount = 0;
 

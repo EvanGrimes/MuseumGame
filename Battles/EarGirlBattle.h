@@ -6,9 +6,9 @@
 class EarGirlBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You ask why her earring aren't diamond and she gets mad at you.";
+    const char FightMsg2[255] = "You tell her that her earrings came from dirty oysters and she becomes \n visibly repulsed";
+    const char FightMsg3[255] = "You ask if she has two earrings and she looks and you attack.";
 
     int BullshitCritCount = 0;
 

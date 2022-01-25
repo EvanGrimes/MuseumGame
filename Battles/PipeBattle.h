@@ -6,9 +6,9 @@
 class PipeBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You ask if there is a pipe and the pipe billows smoke";
+    const char FightMsg2[255] = "You tell the pipe that it's not a pipe and it begins to have an \nexistential crisis";
+    const char FightMsg3[255] = "You throw the pipe into a paradox because it is both there and \nnot there at the same time";
 
     int BullshitCritCount = 0;
 

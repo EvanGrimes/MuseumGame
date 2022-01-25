@@ -6,9 +6,9 @@
 class ScreamBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You ask why he's screaming and he just screams louder";
+    const char FightMsg2[255] = "You try to talk to him but his screams are deafening";
+    const char FightMsg3[255] = "You scare him and the screams only increase in both volume and pitch";
 
     int BullshitCritCount = 0;
 

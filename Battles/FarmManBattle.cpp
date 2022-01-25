@@ -131,7 +131,14 @@ void FarmManBattle::tickFight() {
 }
 
 void FarmManBattle::tickItem() {
-
+    if (CheckCollisionPointRec(mousePoint, ItemBtn)) {
+        if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) ItemBtnAction = true;
+    }
+    if(IsKeyPressed(KEY_C)) ItemBtnAction = true;
+    if (ItemBtnAction) {
+        PlayerCurrHealth.width += 20;
+        std::cout << "ITEM!\n" << std::endl;
+    }
 }
 
 void FarmManBattle::tickLeave() {

@@ -6,9 +6,9 @@
 class WaveBattle {
 public:
 
-    const char FightMsg1[255] = "You ask her who she was modeled after during her painting and send her through an\nexistential crisis";
-    const char FightMsg2[255] = "You ask her if she has any legs below the frame. She looks down and you attack while she's\ndistracted";
-    const char FightMsg3[255] = "You tell her that she might not be a finished painting, and this sends her into shock.";
+    const char FightMsg1[255] = "You wave goodbye. It's feeling are hurt not only by you leaving, \nbut also by the bad pun";
+    const char FightMsg2[255] = "You throw more salt into the ocean";
+    const char FightMsg3[255] = "You drink a cup of the ocean's salt water to assert your dominance";
 
     int BullshitCritCount = 0;
 
